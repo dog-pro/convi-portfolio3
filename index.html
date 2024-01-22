@@ -1,11 +1,483 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+  <!-- 文字コードを UTF-8に設定 -->
   <meta charset="UTF-8">
+  <!-- スマートフォンなどのデバイスで、ページが原寸大で表示されるように設定 -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <!-- IEのレンダリングモードを標準モードに設定 -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <!-- reset css -->
+  <link rel="stylesheet" href="./assets/stylesheet/reset.css">
+  <!-- slider -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+  <!-- css -->
+  <link rel="stylesheet" href="./assets/stylesheet/style.css">
+  <link rel="stylesheet" href="./assets/stylesheet/styleSP.css">
+  <link rel="stylesheet" href="./assets/stylesheet/slick.css">
+  
+  <title>長栄館 [公式サイト]｜岩手県雫石の旅館｜鴬宿温泉源泉掛け流しの宿</title>
 </head>
 <body>
-  
+  <div class="wrapper">
+    <header>
+      <nav>
+        <div class="p-nav__top">
+          <div class="p-nav__logo">
+            <img src="./assets/img/header/header_logo.svg" alt="">
+          </div>
+
+          <ul class="p-nav__menu">
+            <li><a>お知らせ</a></li>
+            <li><a>お料理</a></li>
+            <li><a>お部屋</a></li>
+            <li><a>お湯処</a></li>
+            <li><a>施設案内</a></li>
+            <li><a>交通案内</a></li>
+          </ul>
+        </div><!--p-nav__top-->
+
+        <div class="p-nav__bottom">
+          <div class="p-vacant">
+            <div class="p-vacant__arrow"></div>
+            <div class="c-vacant__arrowWhite"></div>
+            <p>空室確認・ご予約</p>
+          </div>  
+        </div>
+      </nav>
+
+      <div class="p-mainPhoto">
+        <ul class="slider__auto">
+          <li><a><img src="./assets/img/header/main_image01.jpg"></a></li>
+          <li><a><img src="./assets/img/header/main_image02.jpg"></a></li>
+          <li><a><img src="./assets/img/header/main_image03.jpg"></a></li>
+          <li><a><img src="./assets/img/header/main_image04.jpg"></a></li>
+          <li><a><img src="./assets/img/header/main_image05.jpg"></a></li>
+        </ul>
+      </div>
+
+      <div class="p-main__logo"></div>
+
+    </header>
+
+    <main>
+      <div class="wrapper">
+
+        <!-- information -->
+        <section>
+          <div class="p-information">
+            <div class="p-information__title">
+              <p>長栄館からのお知らせ</p>
+            </div>
+            <ul class="p-information__list">
+              <li>
+                <a>
+                  <p>2024.01.01</p>
+                  <p class="p-information__tag">キャンペーン情報</p>
+                  <p>【お得な冬休み】未就学児のご宿泊代がインクルーシブキャンペーン開催決定！</p>
+                </a>
+              </li>
+              <li>
+                <a>
+                  <p>2023.12.25</p>
+                  <p class="p-information__tag">休業情報</p>
+                  <p>日帰り入浴長期休業のお知らせ(12/25~3/31)</p>
+                </a>
+              </li>
+              <li>
+                <a>
+                  <p>2023.11.14</p>
+                  <p class="p-information__tag">お知らせ</p>
+                  <p>屋根の部分修繕工事のお知らせ</p>
+                </a>
+              </li>
+              <li>
+                <a>
+                  <p>2023.11.11</p>
+                  <p class="p-information__tag">キャンペーン情報</p>
+                  <p>【12月～2月限定】スペシャルサンデープランリリース！</p>
+                </a>
+              </li>
+              <li>
+                <a>
+                  <p>2023.01.27</p>
+                  <p class="p-information__tag">お知らせ</p>
+                  <p>Traveller Review Awards 2023受賞いたしました！</p>
+                </a>
+              </li>
+            </ul>
+            <div class="c-link">
+              <div class="c-link__arrow"></div>
+              <div class="c-link__arrowWhite"></div>
+              <p>お知らせ一覧はこちら</p>
+            </div>
+
+            <ul class="p-information__banner">
+              <li><a></a></li>
+              <li><a></a></li>
+              <li><a></a></li>
+            </ul>
+          </div><!-- information -->
+        </section>
+
+        <!-- philosophy -->
+        <section>
+          <div class="p-philosophy">
+            <div class="p-philosophy__img title">
+              <h2><strong>ご案内</strong></h2>
+            </div>
+            <div class="c-section__logo">
+              <img src="./assets/img/logo.svg" alt="">
+              <p>私たちは、日本旅館の伝統を守り続けます。</p>
+            </div>
+
+            <!-- Top -->
+            <div class="p-philosophy__cover">
+              <div class="p-philosophy__contents">
+                <div class="p-philosophy__left">
+                  <p class="p-philosophy__contentsTop">私たち長栄館は、日本旅館の伝統を大切にする宿を目指して、<br>忘れさられようとしている「宿の原点」を重視しております。</p>
+                  <p>自然の懐に抱かれた源泉掛け流しの温泉と、<br>四季を感じる手づくりの料理。</p>
+                </div>
+
+                <div class="p-philosophy__right">
+                  <ul class="slider__auto">
+                    <li><a><img src="./assets/img/philosophy/about_img1.jpg"></a></li>
+                    <li><a><img src="./assets/img/philosophy/about_img2.jpg"></a></li>
+                    <li><a><img src="./assets/img/philosophy/about_img3.jpg"></a></li>
+                  </ul>
+                </div>
+              </div><!--p-philosophy__top-->
+
+              <!-- Bottom -->
+              <div class="p-philosophy__contents">
+                <div class="p-philosophy__left">
+                  <p class="p-philosophy__contentsTop">私たちはもう一度その文化を見つめ直し、<br>日本旅館のさりげない心配りを大切に、<br>皆さまの心に残るお宿になりたいと考えております。</p>
+                  <p>皆さまのお越しを心よりお待ち致しております。</p>
+                </div>
+                <div class="p-philosophy__right">
+                  <ul class="slider__auto">
+                    <li><a><img src="./assets/img/philosophy/about_img4.jpg"></a></li>
+                    <li><a><img src="./assets/img/philosophy/about_img5.jpg"></a></li>
+                  </ul>
+                </div>
+              </div><!--p-philosophy__right--><!--bottom-->
+            </div><!--philosophy__contents-->
+          </div><!--p-philosophy-->
+        </section>
+
+        <!-- dish -->
+        <section>
+          <div class="p-dish">
+            <div class="p-dish__img title">
+              <h2><strong>お料理</strong></h2>
+            </div>
+            <div class="c-section__logo">
+              <img src="./assets/img/logo.svg" alt="">
+              <p>山を目の前にしたこの土地について深く知り、そこにちょっとしたアイデアを加える事で、<br>旅館の食を変えていく取り組みに挑戦しています。</p>
+            </div>
+
+            <div class="p-dish__contents">
+              <div class="p-dish__left">
+                <ul class="slider__manual">
+                  <li><a><img src="./assets/img/dish/dishmain1.jpg"></a></li>
+                  <li><a><img src="./assets/img/dish/dishmain2.jpg"></a></li>
+                  <li><a><img src="./assets/img/dish/dishmain3.jpg"></a></li>
+                  <li><a><img src="./assets/img/dish/dishmain4.jpg"></a></li>
+                  <li><a><img src="./assets/img/dish/dishmain5.jpg"></a></li>
+                  <li><a><img src="./assets/img/dish/dishmain6.jpg"></a></li>
+                </ul>
+              </div>
+
+              <div class="p-dish__contentsRight">
+                <h3>和魂洋菜料理特選プランを<br>心行くまでお楽しみ下さい。</h3>
+                <p>料理長提案の和魂洋菜料理。<br>全てお部屋出しを一品一品出しするプランです。</p>
+                <div class="c-link">
+                  <div class="c-link__arrow"></div>
+                  <div class="c-link__arrowWhite"></div>
+                  <p>このプランのご宿泊予約はこちら</p>
+                </div>
+              </div>
+            </div><!--p-dish__contents-->
+
+            <ul class="p-dish__list">
+              <li><a>ご夕食</a></li>
+              <li><a>ご朝食</a></li>
+              <li><a>追加料理</a></li>
+            </ul>
+            
+            <div class="c-link">
+              <div class="c-link__arrow"></div>
+              <div class="c-link__arrowWhite"></div>
+              <p>お食事一覧はこちら</p>
+            </div>
+            
+          </div>
+        </section>
+        
+        <!-- room -->
+        <section>
+          <div class="p-room">
+            <div class="p-room__img title">
+              <h2><strong>お部屋</strong></h2>
+            </div>
+            <div class="c-section__logo">
+              <img src="./assets/img/logo.svg" alt="">
+              <p>構われ過ぎない快適さを大切にしております。<br>日本旅館のおもてなしを心掛け、ゆったりとくつろげる時間を提供致します。</p>
+            </div>
+            <ul class="p-room__list">
+              <li><a>特別室詳しく
+                和洋室／定員：5名お部屋から宿泊プランを探す
+                特別室</a></li>
+              <li><a>和洋室詳しく
+                和洋室／定員：4名お部屋から宿泊プランを探す
+                和洋室</a></li>
+              <li><a>和室詳しく
+                定員：4名お部屋から宿泊プランを探す
+                和室</a></li>
+            </ul>
+
+            <div class="c-link">
+              <div class="c-link__arrow"></div>
+              <div class="c-link__arrowWhite"></div>
+              <p>お部屋一覧はこちら</p>
+            </div>
+
+          </div>
+        </section>
+        
+        <!-- bath -->
+          <div class="p-bath">
+            <div class="p-bath__img title">
+              <h2><strong>お湯処</strong></h2>
+            </div>
+            <div class="c-section__logo">
+              <img src="./assets/img/logo.svg" alt="">
+              <p>当地に噴出した温泉の湧出量は、毎分1,016リットルを誇り、質・量ともに一級品です。<br>長栄館は、鶯宿温泉で専用自家源泉を持つ唯一の宿です。</p>
+            </div>
+            <ul class="p-bath__select">
+              <li><a>露天風呂・大浴場・檜風呂</a></li>
+              <li><a>源泉掛け流しのこだわり</a></li>
+              <li><a>温泉・日帰り入浴について</a></li>
+            </ul>
+
+            <div class="c-arrow__below"></div>
+
+            <div class="p-bathList">
+              <ul class="p-bathList__cover">
+                <li><a>露天風呂</a></li>
+                <li><a>大浴場</a></li>
+                <li><a>檜風呂</a></li>
+              </ul>
+              <div class="c-link">
+                <div class="c-link__arrow"></div>
+                <div class="c-link__arrowWhite"></div>
+                <p>詳細はこちら</p>
+              </div>
+            </div>
+
+            <div class="p-bathCommit">
+              <div class="p-bathCommit__cover">
+                <div class="p-bathCommit__left">
+                  <h3>何も手を加えない源泉は、<br>本当にわがままです。</h3>
+                  <p>何も手を加えない温泉は、毎日表情を変えます。湯の花が増えたり、<br>減ったり、熱くなったり、ぬるくなったり、白濁したり、とろみが増<br>したり…と、本当にわがままです。</p>
+                  <p>何より温泉は、清潔であることが大切です。長栄館では、毎晩0時から<br>男女ともに全ての浴槽のお湯を抜き、2時間かけて浴槽の清掃を行い<br>ます。そして、早朝5時30分からの入浴時間に合わせ、3時間かけて新<br>しいお湯を注ぎます。</p>
+                  <p>つまり、朝5時30分にご入浴されるお客様は、わがままな温泉の一番<br>風呂をお楽しみいただくことになるのです。</p>
+                </div>
+
+                <div class="p-bathCommit__right">
+                  <ul class="slider__manual">
+                    <li><a><img src="./assets/img/bath/commit_01.jpg"></a></li>
+                    <li><a><img src="./assets/img/bath/commit_02.jpg"></a></li>
+                    <li><a><img src="./assets/img/bath/commit_03.jpg"></a></li>
+                    <li><a><img src="./assets/img/bath/commit_04.jpg"></a></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="c-link">
+                <div class="c-link__arrow"></div>
+                <div class="c-link__arrowWhite"></div>
+                <p>詳細はこちら</p>
+              </div>
+              </div>
+            </div>
+            
+            <div class="p-bathAbout">
+              <div class="p-bathAbout__top">
+                <div class="p-bathAbout__title">
+                  <p>温泉</p>
+                </div>
+                <ul class="p-bathAbout__right">
+                  <li>
+                    <h4>ご利用時間</h4>
+                    <p>朝5時30分～夜12時</p>
+                  </li>
+                  <li>
+                    <h4>浴室アメニティー</h4>
+                    <p>ベビーベット有、ドライヤー、各種アメニティー有</p>
+                  </li>
+                  <li>
+                    <h4>泉質</h4>
+                    <p>単純温泉（低張性アルカリ性高温泉）</p>
+                  </li>
+                  <li>
+                    <h4>効能</h4>
+                    <p>神経痛、筋肉痛、関節痛、五十肩、運動麻痺、関節のこわばり、うちみ、くじき、慢性消化器病,痔疾、冷え性、病後回復期、疲労回復、健康増進、慢性婦人病、切り傷、糖尿病(硫化水素型)、高血圧症、動脈硬化</p>
+                  </li>
+                </ul>
+              </div><!--p-bathAbout__cover-->
+
+              <div class="p-bathAbout__bottom">
+                <div class="p-bathAbout__title">
+                  <p>日帰り入浴</p>
+                </div>
+                <ul class="p-bathAbout__right">
+                  <li>
+                    <h4>ご利用料金</h4>
+                    <p>大人:1,000円 ／ 小学生:700円 ／ 3歳〜未就学児:500円 ／ 3歳未満:無料</p>
+                  </li>
+                  <li>
+                    <h4>ご利用時間</h4>
+                    <p>11:00〜14:00で受付終了、15:00までには風呂からお上がり下さい。</p>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="c-link">
+                <div class="c-link__arrow"></div>
+                <div class="c-link__arrowWhite"></div>
+                <p>詳細はこちら</p>
+              </div>
+            </div>
+          </div><!--p-bathAbout-->
+          </div><!--p-bath-->
+        </section>
+
+        <!-- guide -->
+        <section>
+          <div class="p-guide">
+            <div class="p-guide__img title">
+              <h2><strong>施設案内</strong></h2>
+            </div>
+            <div class="c-section__logo">
+              <img src="./assets/img/logo.svg" alt="">
+              <p>日本旅館の伝統を大切にする宿を目指して、<br>忘れさられようとしている「宿の原点」を重視しております。</p>
+            </div>
+
+            <div class="p-guide__contents">
+              <!-- left -->
+              <div class="p-guide__list">
+                <div class="p-guide__listLeft">
+                  <p class="p-guide__listSpace">カフェスペース</p>
+                  <p>梅の木</p>
+                </div>
+                <div class="p-guide__listRight cafe__img"></div>
+              </div>
+              <!-- right -->
+              <div class="p-guide__list">
+                <div class="p-guide__listLeft">
+                  <p class="p-guide__listSpace">ラウンジスペース</p>
+                  <p>日本酒BAR</p>
+                </div>
+                <div class="p-guide__listRight bar__img"></div>
+              </div>
+            </div>
+
+            <div class="c-link">
+              <div class="c-link__arrow"></div>
+              <div class="c-link__arrowWhite"></div>
+              <p>詳細はこちら</p>
+            </div>
+
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer>
+      <div class="p-footer__top">
+        <!-- left -->
+        <div class="p-footer__left">
+
+          <div class="p-footer__title">
+            <p>岩手県鴬宿温泉 長栄館</p>
+            <div class="p-footer__sns">
+              <div class="p-footer__facebook"></div>
+              <div class="p-footer__instagram"></div>
+            </div>
+          </div>
+
+          <!-- middle left -->
+          <ul class="p-footer__nav">
+            <li><a>お知らせ</a></li>
+            <li><a>お料理</a></li>
+            <li><a>お部屋</a></li>
+            <li><a>お湯処</a></li>
+            <li><a>施設案内</a></li>
+            <li><a>交通案内</a></li>
+          </ul>
+
+        </div><!-- p-footer__left -->
+        
+      <div class="p-footer__right">
+        <!-- right top -->
+        <div class="p-footer__rightTop">
+          <div>
+            <p>〒020-0574 岩手県岩手郡雫石町鴬宿6-7</p>
+            <p>019-695-2121</p>
+          </div>
+
+          <div class="p-vacant">
+            <div class="p-vacant__arrow"></div>
+            <div class="c-vacant__arrowWhite"></div>
+            <p>空室確認・ご予約</p>
+          </div>  
+        </div>
+
+        <!-- middle right -->
+        <p>長栄館は盛岡駅から秋田街道46号線繋十文字交差点を左折し、車で約30分の100％源泉掛け流しの宿で、
+          小岩井牧場・田沢湖・乳頭温泉・秋田角館への観光コースとしても至便な旅館。</p>
+      </div>
+    </div>
+
+      <div class="p-footer__bottom">
+        <div class="p-footer__bottomCover">
+          <small>Copyright © CHOEIKAN ONSEN All Rights Reserved.</small>
+          <ul class="p-footer__bottomList">
+            <li><a>お問い合わせ</a></li>
+            <li><a>エージェント向け</a></li>
+            <li><a>プライバシーポリシー</a></li>
+            <li><a>特定商取引法</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </div><!--wrapper-->
+
+      <!-- jQuery -->
+      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+      <!-- スライダー -->
+      <script>
+        $(function(){
+          $('.slider__auto').slick({
+            arrows: false, /*左右の矢印*/
+            autoplay: true, /*自動再生*/
+            autoplaySpeed: 3000,   // 自動スライド切り替え速度
+            speed: 500,   // 画像切り替えにかかる時間（ミリ秒）
+            infinite: true, /*スライドのループ　最後のスライドの次に１枚目に戻すか(最後→１枚目に戻る)*/
+            fade: true,
+            slidesToShow: 1, /*１度に表示するスライド数*/
+            slidesToScroll: 1, /*１回で何枚分スクロールさせるか*/
+          });
+          $('.slider__manual').slick({
+            dots: true
+          });
+        });
+      </script>
 </body>
 </html>

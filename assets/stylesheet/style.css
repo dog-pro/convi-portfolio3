@@ -1,0 +1,815 @@
+@charset "UTF-8";
+
+/* PC style */
+@media screen and (min-width: 769px){
+
+  .wrapper{
+    min-width: 1200px;
+    font-family: "Source Serif Pro", "游明朝", "Yu Mincho", "游明朝体", "YuMincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HiraMinProN-W3", "Noto Serif JP", "ＭＳ 明朝", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", "HG明朝E", serif;
+  }
+
+  .c-link{
+    position: relative;
+    width: 380px;
+    border: double ;
+    font-size: 13px;
+    padding: 10px 0;
+    margin: 40px auto;
+
+    display: flex;
+    align-items: center;
+
+  }
+
+  .c-link:hover{
+    color: white;
+    background-color: black;
+    border-color: transparent; /*borderのみ非表示*/
+    transition: all 0.5s ease;
+  }
+
+  .c-link p{
+    margin: 0 auto;
+  }
+
+  .c-link__arrow{
+    position: absolute;
+    left: 60px;
+    width: 10px;
+    height: 10px;
+    background-image: url("../img/arrow_down.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: rotate(-90deg);
+  }
+
+  .c-link__arrowWhite{
+    display: none;
+  }
+
+  .c-link:hover .c-link__arrow{
+    display: none;
+  }
+
+  .c-link:hover .c-link__arrowWhite{
+    display: block;
+    position: absolute;
+    left: 60px;
+    width: 10px;
+    height: 10px;
+    background-image: url("../img/arrow_hover.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .title{
+    width: 100%;
+    height: 360px;
+    color: white;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  h2{
+    margin: 0 auto;
+  }
+
+  .c-section__logo{
+    text-align: center;
+    padding-bottom: 40px;
+    font-size: 18px;
+  }
+
+  .c-section__logo img{
+    margin: 48px 0;
+  }
+
+  .c-section__logo p{
+    line-height: 2;
+  }
+
+  /* header */
+  header{
+
+  }
+
+  /* nav */
+  nav{
+  }
+
+  .p-nav__top{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    color: black;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .p-nav__logo{
+    display: flex;
+    width: 325px;
+    height: 100%;
+    margin-left: 30px;
+  }
+
+  .p-nav__logo img{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+  }
+
+  .p-nav__menu{
+    display: flex;
+    font-size: 16px;
+    margin-right: 30px;
+  }
+
+  .p-nav__menu li{
+    margin-right: 30px;
+  }
+
+  .p-nav__menu li a{
+    padding-bottom: 10px;
+  }
+
+  .p-nav__menu li:hover{
+    border-bottom: 3px transparent solid red;
+    cursor: pointer;
+  }
+
+  .p-nav__bottom{
+    position: relative;
+    height: 56px;
+    background-color: black;
+    text-align: right;
+    align-items: center;
+  }
+
+  .p-vacant{
+    position: absolute;
+    right: 2%;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 200px;
+    height: 35px;
+
+    display: flex;
+    align-items: center;
+    color: black;
+    background-color: white;
+    cursor: pointer;
+  }
+
+  .p-vacant p{
+    margin: 0 auto;
+  }
+
+  .p-vacant:hover{
+    color: white;
+    background-color: black;
+    border:1px solid white; /*borderのみ非表示*/
+    transition: all 0.5s ease;
+  }
+
+  .p-vacant__arrow{
+    position: absolute;
+    left: 15px;
+    width: 10px;
+    height: 10px;
+    background-image: url("../img/arrow_down.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: rotate(-90deg);
+  }
+
+  .c-vacant__arrowWhite{
+    display: none;
+  }
+
+  .c-vacant:hover .c-vacant__arrow{
+    display: none;
+  }
+
+  .c-vacant:hover .c-vacant__arrowWhite{
+    display: block;
+    position: absolute;
+    left: 15px;
+    width: 10px;
+    height: 10px;
+    background-image: url("../img/arrow_hover.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .p-mainPhoto{
+    margin: 0 auto;
+    scale: (1.5);
+  }
+
+  .p-main__logo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 240px;
+    height: 250px;
+    background-image: url("../img/header/main_logo.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+  }
+
+  .slider__auto{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  /* main */
+
+  main{
+    margin: 0 auto;
+  }
+  
+  /* information */
+  .p-information{
+    width: 1080px;
+    margin: 0 auto;
+  }
+
+  .p-information__title{
+    padding: 40px 0;
+    font-size: 24px;
+  }
+
+  .p-information__list{
+    list-style: none;
+  }
+
+  .p-information__list li{
+    padding: 20px 0;
+    border-bottom: 1px dotted #c3c3c3;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .p-information__list li:first-child{
+    border-top: 1px dotted #c3c3c3;
+  }
+
+  .p-information__list li:hover a{
+    transition: all 0.5s ease;
+    opacity: 0.4;
+  }
+
+  .p-information__tag{
+    width: 130px;
+    padding: 8px 0;
+    background-color: black;
+    color: white;
+    font-size: 13px;
+    text-align: center;
+    margin: 0 30px;
+  }
+
+  .p-information__list li a{
+    display: flex;
+    align-items: center;
+  }
+  
+  .p-information__banner{
+    display: flex;
+    margin-top: 200px;
+    padding: 40px 0;
+    list-style: none;
+  }
+
+  .p-information__banner li{
+    margin: 0 14px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 32%;
+    height: 173px;
+  }
+
+  .p-information__banner li:hover{
+    transition: all 0.5s ease;
+    opacity: 0.7;
+  }
+
+  .p-information__banner :nth-child(1){
+    background-image: url("../img/information/inclusive.jpg");
+  }
+
+  .p-information__banner :nth-child(2){
+    background-image: url("../img/information/online_shop.jpg");
+  }
+
+  .p-information__banner :nth-child(3){
+    background-image: url("../img/information/sakebar.png");
+  }
+
+  /* Philosophy */
+  .p-philosophy{
+    margin-bottom: 80px;
+  }
+
+  .p-philosophy__img{
+    background-image: url("../img/philosophy/philosophy_img.jpg");
+  }
+
+  .p-philosophy__cover{
+    width: 1080px;
+    margin: 0 auto;
+  }
+
+  .p-philosophy__contents{
+    display: flex;
+    align-items: center;
+  }
+
+  .p-philosophy__left{
+    width: 48%;
+    line-height: 1.7;
+  }
+
+  .p-philosophy__contentsTop{
+    margin-bottom: 30px;
+  }
+
+  .p-philosophy__right{
+    width: 48%;
+    margin: 2px 0;
+  }
+
+  /* スライド画像 */
+  /* slick.cssに記載あり */
+
+  /* dish */
+  .p-dish{
+    padding-bottom: 80px;
+  }
+
+  .p-dish__img{
+    background-image: url("../img/dish/dish_img.jpg");
+  }
+
+  .p-dish__contents{
+    display: flex;
+    width: 1080px;
+    margin: 0 auto;
+  }
+
+  .p-dish__left{
+    width: 600px;
+    margin: 2px 0;
+  }
+
+  .p-dish__contentsRight{
+    margin: 0 auto;
+    width: 430px;
+    line-height: 1.7;
+  }
+
+  .p-dish__contentsRight h3{
+    padding: 30px 22px 40px;
+    font-size: 24px;
+    line-height: 1.8;
+  }
+
+  .p-dish__contentsRight > p{
+    margin: 0 22px 40px;
+    font-size: 14px;
+    line-height: 1.8;
+  }
+
+  .p-dish__list{
+    width: 1080px;
+    display: flex;
+    padding-top: 40px;
+    margin: 0 auto;
+    list-style: none;    
+    text-align: center;
+  }
+
+  .p-dish__list li{
+    margin: 0 2px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 33%;
+    height: 200px;
+  }
+
+  .p-dish__list :nth-child(1){
+    background-image: url("../img/dish/dinner.jpg");
+  }
+  .p-dish__list :nth-child(2){
+    background-image: url("../img/dish/breakfast.jpg");
+  }
+  .p-dish__list :nth-child(3){
+    background-image: url("../img/dish/additional.jpg");
+  }
+
+  /* room */
+  .p-room{
+    padding-bottom: 80px;
+  }
+
+  .p-room__img{
+    background-image: url("../img/room/room_img.jpg");
+  }
+
+  .p-room__list{
+    width: 1080px;
+    display: flex;
+    /* padding-top: 40px; */
+    margin: 0 auto;
+    list-style: none;    
+    text-align: center;
+  }
+
+  .p-room__list li{
+    margin: 0 2px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 33%;
+    height: 250px;
+  }
+
+  .p-room__list :nth-child(1){
+    background-image: url("../img/room/special_room.jpg");
+  }
+  .p-room__list :nth-child(2){
+    background-image: url("../img/room/western_style.jpg");
+  }
+  .p-room__list :nth-child(3){
+    background-image: url("../img/room/japanese_style.jpg");
+  }
+
+  /* bath */
+  .p-bath{
+    position: relative;
+    padding-bottom: 80px;
+  }
+
+  .p-bath__img{
+    background-image: url("../img/bath/bath_img.jpg");
+  }
+
+  .p-bath__select{
+    width: 1080px;
+    list-style: none;
+    display: flex;
+    margin: 0 auto;
+  }
+
+  .p-bath__select li{
+    position: relative;
+    width: 32%;
+    height: 20px;
+    border: double;
+    font-size: 16px;
+    padding: 10px 0;
+    margin-right: 18px;
+    display: flex;
+    align-items: center;
+  }
+
+  .p-bath__select li a{
+    margin: 0 auto;
+  }
+
+  .p-bath__select li:hover{
+    color: white;
+    background-color: black;
+    border-color: transparent; /*borderのみ非表示*/
+    transition: all 0.5s ease;
+  }
+
+  .c-arrow__below{
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    width: 10px;
+    height: 10px;
+    background-image: url("../img/arrow_down.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .p-bathList{
+    width: 1080px;
+    margin: 104px auto 0;
+    display: none;
+  }
+
+  .p-bathList__cover{
+    display: flex;
+    height: 500px;
+    list-style: none;
+    font-size: 24px;
+    color: white;
+  }
+
+  .p-bathList__cover li{
+    width: 32.5%;
+    margin: 0 2px;
+
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .p-bathList__cover li:hover{
+    opacity: 0.7;
+    transition: all 0.5s ease;
+  }
+
+  .p-bathList__cover a{
+    margin: 0 auto;
+  }
+
+  .p-bathList__cover li:hover a{
+    visibility: hidden;
+    transition: all 1s ease;
+  }
+
+  .p-bathList__cover li:nth-child(1){
+    background-image: url("../img/bath/openbath.jpg");
+  }
+  .p-bathList__cover li:nth-child(2){
+    background-image: url("../img/bath/big_bathroom.jpg");
+  }
+  .p-bathList__cover li:nth-child(3){
+    background-image: url("../img/bath/hinoki_bath.jpg");
+  }
+
+  /* commit */
+  .p-bathCommit{
+    width: 1080px;
+    margin: 104px auto 0;
+    /* display: none; */
+  }
+
+  .p-bathCommit__cover{
+    display: flex;
+  }
+
+  .p-bathCommit__left{
+    width: 48%;
+    line-height: 1.7;
+  }
+
+  .p-bathCommit__left h3{
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
+  .p-bathCommit__left p{
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+
+  .p-bathCommit__right{
+    width: 48%;
+    margin: 2px 0;
+  }
+
+  /* about */
+  .p-bathAbout{
+    width: 1080px;
+    margin: 104px auto 0;
+    display: none;
+  }
+
+  .p-bathAbout__top{
+    display: flex;
+  }
+
+  .p-bathAbout__bottom{
+    display: flex;
+    margin-top: 100px;
+  }
+
+  .p-bathAbout__title{
+    align-items: center;
+  }
+
+  .p-bathAbout__title p{
+    width: 230px;
+    border-left: double;
+    font-size: 18px;
+    padding-left: 28px;
+    margin-right: 30px;
+    line-height: 50px;
+  }
+
+  .p-bathAbout__right{
+    width: 800px;
+    list-style: none;
+  }
+
+  .p-bathAbout__right li{
+    font-size: 14px;
+    padding: 20px 0 18px;
+    display: flex;
+    border-bottom: #c3c3c3 1px solid;
+    line-height: 180%;
+  }
+
+  .p-bathAbout__right h4{
+    width: 160px;
+  }
+
+  .p-bathAbout__right p{
+    width: 640px;
+  }
+
+  /* guide */
+  .p-guide{
+    padding-bottom: 80px;
+  }
+
+  .p-guide__img{
+    background-image: url("../img/guide/guide_img.jpg");
+  }
+
+  .p-guide__contents{
+    display: flex;
+    width: 1080px;
+    margin: 0 auto;
+  }
+
+  .p-guide__list{
+    display: flex;
+    width: 49%;
+    height: 230px;
+    margin-right: 50px;
+  }
+
+  .p-guide__listLeft{
+    width: 140px;
+    text-align: center;
+  }
+
+  .p-guide__listLeft p{
+    border-bottom: double;
+    font-size: 18px;
+    padding: 13% 5%;
+  }
+
+  .p-guide__listSpace{
+    border-top: double;
+    font-size: 13px !important; 
+  }
+
+  .p-guide__listRight{
+    width: 350px;
+    height: 200px;
+    margin-left: 26px;
+    cursor: pointer;
+
+    position: relative;
+    display: inline-block;
+    background-color: black;
+  }
+
+  .p-guide__listRight:hover{
+    opacity: 0.7;
+    transition: 0.3s all ease;
+  }
+
+  .cafe__img{
+    background-image: url("../img/guide/guide_cafe.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: block;
+  }
+
+  .bar__img{
+    background-image: url("../img/guide/guide_lounge.jpg");
+  }
+
+  /* footer */
+  footer{
+    background-color: #abb8c330;
+  }
+
+  .p-footer__top{
+    display: flex;
+    width: 1080px;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 30px 0;
+  }
+
+  .p-footer__left{
+    width: 475px;
+  }
+
+  .p-footer__title{
+    display: flex;
+  }
+
+  .p-footer__title p{
+    font-size: 18px;
+  }
+
+  .p-footer__sns{
+    display: flex;
+    margin-left: 40px;
+  }
+
+  .p-footer__facebook{
+    background-image: url("../img/footer/facebook.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+  }
+
+  .p-footer__instagram{
+    background-image: url("../img/footer/instagram.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+  }
+
+  .p-footer__nav{
+    display: flex;
+    list-style: none;
+  }
+
+  .p-footer__nav li{
+    margin: 0 3px;
+    border-bottom: 1px solid black;
+  }
+  
+  .p-footer__right{
+    width: 620px;
+  }
+
+  .p-footer__rightTop{
+    display: flex;
+  }
+
+
+
+  .p-footer__bottom{
+    color: white;
+    background-color: black;
+  }
+
+  .p-footer__bottomCover{
+    display: flex;
+    width: 1080px;
+    font-size: 12px;
+    padding: 10px 0;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  .p-footer__bottomList{
+    display: flex;
+    list-style: none;
+  }
+
+  .p-footer__bottomList li{
+    margin-left: 10px;
+    border-bottom: 1px solid white;
+    cursor: pointer;
+  }
+
+  .p-footer__bottomList li:hover{
+    border-bottom: none;
+  }
+
+}

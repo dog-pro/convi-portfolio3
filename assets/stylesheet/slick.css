@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+/* PC style */
+@media screen and (min-width: 769px){
+
+  /* ページ再読み込み時、スライダーが一瞬縦並びになる現象の対処 */
+  .slider{
+    visibility: hidden;
+  }
+  
+  .slider.slick-initialized{
+    visibility: visible;
+  }
+
+  .slick-prev,.slick-next{
+    z-index: 1;
+  }
+
+  .slick-prev{
+    left: 10px
+  }
+
+  .slick-next{
+    right: 10px;
+  }
+
+
+
+};
+
+/* SP style */
+@media screen and (max-width: 768px){
+
+};
