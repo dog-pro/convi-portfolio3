@@ -1,10 +1,22 @@
 /* PC style */
 @media screen and (min-width: 769px){
   .p-hamburgerPC{
-    width: 450px;
+    /* display: none; */
+    position: absolute;
+    right: -450px;
+    /* transform: scaleX(0); */
+    top: 0;
+    width: 350px;
     height: 100vh;
     padding: 100px 50px;
     background: rgba(0, 0, 0, 0.9);
+    z-index: 2;
+    overflow-y: auto;
+    font-family: "Source Serif Pro", "游明朝", "Yu Mincho", "游明朝体", "YuMincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HiraMinProN-W3", "Noto Serif JP", "ＭＳ 明朝", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", "HG明朝E", serif;
+  }
+
+  .p-humburgerSP{
+    display: none;
   }
 
   .p-hamburgerPC__top{
@@ -14,7 +26,43 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   }
 
-  .p-hamburgerPC__top p{
+  .p-hamburgerPC__close{
+    position: absolute;
+    top: 25px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+
+  .barTop{
+    display: block;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 84%;
+    height: 10%;
+    margin: -8% 0 0 -42%;
+    background: #fff;
+    transform: rotate(-45deg);
+  }
+
+  .barBottom{
+    display: block;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 84%;
+    height: 10%;
+    margin: -8% 0 0 -42%;
+    background: #fff;
+    transform: rotate(45deg);
+  }
+
+  .p-hamburgerPC__title{
     font-size: 1.1em;
     text-align: center;
     padding: 0.5em 0;
@@ -53,20 +101,21 @@
     border-right: 2px solid #fff;
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
-    right: 180px;
+    right: 130px;
     top: calc(50% - 7px);
   }
 
   .p-search{
     position: relative;
     width: 100%;
-    height: 35px;
+    height: 42px;
     margin-top: 20px;
     display: flex;
     align-items: center;
     color: black;
     background-color: white;
     cursor: pointer;
+    border: rgba(0, 0, 0, 0.9) 1px solid;
   }
 
   .p-search > p{
@@ -101,7 +150,7 @@
     display: none;
   }
 
-  .c-search:hover .c-search__arrowWhite{
+  .p-search:hover .c-search__arrowWhite{
     display: block;
     position: absolute;
     left: 15px;
@@ -113,7 +162,203 @@
     background-repeat: no-repeat;
   }
 
-  .p-hamburgerPC__bottom{}
+  .p-hamburgerPC__bottom{
+    color: white;
+
+  }
+
+  .p-hamburgerPC__link{
+    list-style: none;
+    margin-bottom: 32px;
+  }
+
+  .p-hamburgerPC__link li{
+    position: relative;
+    padding-left: 20px;
+    line-height: 1.5;
+  }
+
+  .p-hamburgerPC__link li p::before{
+    display: block;
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    background-image: url("../img/arrow_hover.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .p-hamburgerPC__reserve{
+    /* height: 110px; */
+    color: black;
+    background-color: white;
+    padding: 16px 16px 16px 0;
+    margin: 20px 0;
+  }
+
+  .p-hamburgerPC__reserveCover{
+    position: relative;
+    padding-left: 90px;
+  }
+
+  .p-hamburgerPC__reserveCover::before{
+    display: block;
+    content: "";
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 45px;
+    height: 45px;
+    background-image: url("../img/hamburger/icon_phone.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .p-hamburgerPC__tel{
+    height: 25px;
+    border-bottom: 1px black solid;
+    padding-bottom: 5px;
+    font-size: 14px;
+    text-align: left;
+  }
+
+  .p-hamburgerPC__reserveBottom{
+    padding-top: 5px;
+  }
+
+  .p-hamburgerPC__number{
+    width: 185px;
+    height: 22px;
+    margin-bottom: 3px;
+    background-image: url("../img/hamburger/reserve_tel.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .p-hamburgerPC__openhour{}
+
+  .p-hamburgerPC__bestrate{
+    height: 165px;
+    color: black;
+    background-color: white;
+    padding: 20px 15px;
+  }
+
+  .p-hamburgerPC__bestrateTop{
+    position: relative;
+    /* height: 100px; */
+    border-bottom: 1px black solid;
+  }
+
+  .p-hamburgerPC__bestrateTop::before{
+    content: '';
+    width: 29px;
+    height: 29px;
+    position: absolute;
+    left: -15px;
+    top: -20px;
+    z-index: 1;
+    border-left: #af9463 2px solid;
+    border-top: #af9463 2px solid;
+  }
+
+  .p-hamburgerPC__bestrateTop::after{
+    content: '';
+    width: 29px;
+    height: 29px;
+    position: absolute;
+    right: -15px;
+    top: -20px;
+    z-index: 1;
+    border-right: #af9463 2px solid;
+    border-top: #af9463 2px solid;
+  }
+
+  .p-hamburgerPC__bestrateCover{
+    height: 100px;
+    padding-left: 130px;
+    position: relative;
+  }
+
+  .p-hamburgerPC__bestrateCover::before{
+    display: block;
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100px;
+    height: 100px;
+    background-image: url("../img/hamburger/reserve_bestrate.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .p-hamburgerPC__bestrateCover p{
+    font-size: 13px;
+    line-height: 160%;
+  }
+
+  .p-hamburgerPC__bestrateTitle{
+    font-size: 21px !important;
+    color: #af9463;
+  }
+
+  .p-hamburgerPC__bestrateBottom{
+    position: relative;
+    font-size: 14px;
+    margin-top: 8px;
+    padding-top: 10px;
+    line-height: 160%;
+  }
+
+  .p-hamburgerPC__bestrateBottom::before{
+    content: '';
+    width: 29px;
+    height: 29px;
+    position: absolute;
+    left: -15px;
+    bottom: -21px;
+    z-index: 1;
+    border-left: #af9463 2px solid;
+    border-bottom: #af9463 2px solid;
+  }
+
+  .p-hamburgerPC__bestrateBottom::after{
+    content: '';
+    width: 29px;
+    height: 29px;
+    position: absolute;
+    right: -15px;
+    bottom: -21px;
+    z-index: 1;
+    border-right: #af9463 2px solid;
+    border-bottom: #af9463 2px solid;
+  }
+
+  /* after click event */
+
+  .add{
+    /* position: fixed; */
+    right: 0;
+    transition:all .6s;
+    overflow-y: scroll;
+  }
+  
+  .close{
+    position: absolute;
+    right: -450px;
+    transition: .6s;
+  }
 
 }
 
@@ -122,4 +367,52 @@
 /* SP style */
 @media screen and (max-width: 768px){
 
+  .p-hamburgerPC{
+    display: none;
+  }
+
+  .p-humburgerSP{
+    position: absolute;
+    right: 0;
+    width: 55px;
+    height: 100%;
+  }
+
+  .p-humburgerSP::before{
+    position: absolute;
+    content: '';
+    height: 30px;
+    width: 1px;
+    background-color: #c3c3c3;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin: -15px 0 0;
+  }
+
+  .p-humburgerSP__img{
+    cursor: pointer;
+  }
+
+  .p-humburgerSP__img::before{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-image: url("../img/header/sp/humburger_menu.png");
+    background-size: 30px 15px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .p-humburgerSP__img::after{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-image: url("../img/header/sp/humburger_close.png");
+    background-size: 30px 15px;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: none;
+  }
 }

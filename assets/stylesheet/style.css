@@ -92,13 +92,22 @@
     line-height: 2;
   }
 
+  body{
+    position: relative;
+    overflow-x: hidden;
+  }
+
   /* header */
   header{
-
+    position: relative;
   }
 
   /* nav */
   nav{
+  }
+
+  .p-navSP{
+    display: none;
   }
 
   .p-navTop{
@@ -169,6 +178,7 @@
     color: black;
     background-color: white;
     cursor: pointer;
+    border: #c8c8c8 1px solid;
   }
 
   .p-vacant p{
@@ -198,11 +208,11 @@
     display: none;
   }
 
-  .c-vacant:hover .c-vacant__arrow{
+  .p-vacant:hover .c-vacant__arrow{
     display: none;
   }
 
-  .c-vacant:hover .c-vacant__arrowWhite{
+  .p-vacant:hover .c-vacant__arrowWhite{
     display: block;
     position: absolute;
     left: 15px;
@@ -267,6 +277,10 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+
     animation: updown 5s infinite;/* アニメーション名の指定 */
     animation-duration: 3s;
     /* アニメーション動作時間の指定 */
@@ -274,9 +288,8 @@
     /* アニメーションの動き指定（徐々に早く）*/
   }
 
-  .p-main__scrolldown p{
-    position: absolute;
-    left: 15px;
+  .p-main__scrolldown > p{
+    margin: 0 auto;
     width: 10px;
     height: 10px;
     background-image: url("../img/header/arrow_down.png");
@@ -288,7 +301,7 @@
   
   .p-header__information{
     position: absolute;
-    top: 155px;
+    top: 100px;
     right: 45px;
     display: flex;
     color: white;
@@ -307,6 +320,7 @@
     border-bottom: 1px rgba(255, 255, 255, 0.3) solid;
     padding: 5px 10px;
     cursor: pointer;
+    display: inline-block;
   }
 
   .p-language__title{
@@ -366,7 +380,7 @@
   }
 
   .p-header__addressTell{
-    width: 100%;
+    width: 103%;
     height: 22px;
     background-image: url("../img/header/header_tel.png");
     background-size: cover;
@@ -431,6 +445,11 @@
   }
 
   .p-information__list li a{
+    display: flex;
+    align-items: center;
+  }
+
+  .p-information__listTop{
     display: flex;
     align-items: center;
   }
@@ -543,31 +562,91 @@
   }
 
   .p-dish__list{
+    position: relative;
     width: 1080px;
     display: flex;
     padding-top: 40px;
     margin: 0 auto;
     list-style: none;    
-    text-align: center;
   }
 
   .p-dish__list li{
+    position: relative;
+    width: 33%;
+    height: 200px;
     margin: 0 2px;
+    background-color: black;
+    cursor: pointer;
+  }
+
+  .p-dish__listImg{
+    width: 100%;
+    height: 180px;
+    background-size: cover;
+  }
+
+  .dinner{
+    background-image: url("../img/dish/dinner.jpg");
+  }
+
+  .breakfirst{
+    background-image: url("../img/dish/breakfast.jpg");
+  }
+
+  .adddish{
+    background-image: url("../img/dish/additional.jpg");
+  }
+
+  .p-dish__list li:hover .p-dish__listImg{
+    opacity: 0.5;
+    transition: 0.6s;
+  }
+
+  .p-dish__list li:hover .p-dish__circle{
+    display: none;
+  }
+
+  .p-dish__list li:hover .p-dish__circleHover{
+    display: block;
+  }
+
+  .p-dish__list li:hover .p-dish__title{
+    color: white;
+  }
+
+  .p-dish__circle{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 100px;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    width: 33%;
-    height: 200px;
   }
 
-  .p-dish__list :nth-child(1){
-    background-image: url("../img/dish/dinner.jpg");
+  .p-dish__circleHover{
+    display: none;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 100px;
+    background-image: url("../img/dish/circle_hover.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
   }
-  .p-dish__list :nth-child(2){
-    background-image: url("../img/dish/breakfast.jpg");
-  }
-  .p-dish__list :nth-child(3){
-    background-image: url("../img/dish/additional.jpg");
+
+  .p-dish__title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: black;
+    z-index: 2;
   }
 
   /* room */
@@ -609,8 +688,8 @@
 
   /* bath */
   .p-bath{
-    position: relative;
-    padding-bottom: 80px;
+    /* position: relative; */
+    /* padding-bottom: 80px; */
   }
 
   .p-bath__img{
@@ -647,10 +726,35 @@
     transition: all 0.5s ease;
   }
 
-  .c-arrow__below{
+  .c-arrow__select{
     position: absolute;
-    top: 40%;
-    left: 30%;
+    top: -15%;
+    left: 15%;
+    width: 10px;
+    height: 10px;
+    background-image: url("../img/arrow_down.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .c-arrow__commit{
+    position: absolute;
+    top: -18%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
+    background-image: url("../img/arrow_down.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .c-arrow__about{
+    position: absolute;
+    top: -15%;
+    right: 15%;
     width: 10px;
     height: 10px;
     background-image: url("../img/arrow_down.png");
@@ -660,9 +764,9 @@
   }
 
   .p-bathList{
+    position: relative;
     width: 1080px;
     margin: 104px auto 0;
-    display: none;
   }
 
   .p-bathList__cover{
@@ -674,55 +778,79 @@
   }
 
   .p-bathList__cover li{
+    position: relative;
     width: 32.5%;
     margin: 0 2px;
+    cursor: pointer;
+    background-color: black;
+  }
 
+  .p-bathList__img{
+    width: 100%;
+    height: 100%;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+  }
+
+  .p-bathList__cover li:hover .p-bathList__img{
+    opacity: 0.6;
+    transition: 0.6s ease;
+  }
+
+  .p-bathList__hover{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 
     display: flex;
     align-items: center;
-    cursor: pointer;
+    width: 100%;
+    height: 42px;
+    font-size: 16px;
+    color: black;
+    background-color: white;
+
+    opacity: 0;
   }
 
-  .p-bathList__cover li:hover{
-    opacity: 0.7;
-    transition: all 0.5s ease;
-  }
-
-  .p-bathList__cover a{
+  .p-bathList__hover p{
     margin: 0 auto;
   }
 
-  .p-bathList__cover li:hover a{
-    visibility: hidden;
-    transition: all 1s ease;
+  .p-bathList__cover li:hover .p-bathList__hover{
+    opacity: 1;
   }
 
-  .p-bathList__cover li:nth-child(1){
+  .p-bathList__title{
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .openbath{
     background-image: url("../img/bath/openbath.jpg");
   }
-  .p-bathList__cover li:nth-child(2){
+  .bigbath{
     background-image: url("../img/bath/big_bathroom.jpg");
   }
-  .p-bathList__cover li:nth-child(3){
+  .hinokibath{
     background-image: url("../img/bath/hinoki_bath.jpg");
-  }
+  } 
 
+  .is-hidden{
+    transition: .6s;
+    display: none;
+  }
+  
   /* commit */
-  .p-bathCommit{
-    width: 1080px;
-    margin: 104px auto 0;
-    /* display: none; */
-  }
-
   .p-bathCommit__cover{
     display: flex;
   }
 
   .p-bathCommit__left{
-    width: 48%;
+    width: 50%;
     line-height: 1.7;
   }
 
@@ -737,17 +865,12 @@
   }
 
   .p-bathCommit__right{
-    width: 48%;
+    position: relative;
+    width: 50%;
     margin: 2px 0;
   }
 
   /* about */
-  .p-bathAbout{
-    width: 1080px;
-    margin: 104px auto 0;
-    display: none;
-  }
-
   .p-bathAbout__top{
     display: flex;
   }
@@ -829,146 +952,62 @@
     font-size: 13px !important; 
   }
 
+  /* right */
   .p-guide__listRight {
   position: relative;
   width: 350px;
   height: 200px;
   margin-left: 26px;
+  background-color: black;
   cursor: pointer;
   }
-
-  .p-guide__listRight img {
-  height: auto;
+  
+.p-guide__listImg {
   width: 100%;
+  height: 100%;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-.p-guide__detail {
-  align-items: center; /* テキストの中央揃え */
-  background: rgba(0, 0, 0, .5); /* マスクの色(黒の50%) */
-  bottom: 0;
-  color: #fff; /* テキストの色 */
-  display: flex; /* テキストの中央揃え */
-  height: auto;
-  justify-content: center; /* テキストの中央揃え */
-  left: 0;
-  opacity: 0; /* 最初は透明(非表示) */
-  position: absolute;
-  right: 0;
-  top: 0;
-  transition: opacity .6s ease; /* ゆっくりopacityのみへ変化させる */
-  width: 100%;
+.p-guide__listRight:hover .p-guide__listImg{
+  opacity: 0.5;
+  transition: .6s ;
+}
 
-      /* width: 225px;
-    height: 42px;
-    color: black;
-    font-size: 13px; */
+.cafe{
+  background-image: url("../img/guide/guide_cafe.jpg");
 }
-.p-guide__detail:hover {
-  opacity: 1; /* hoverしたら透過しない(表示させる) */
+
+.lounge{
+  background-image: url("../img/guide/guide_lounge.jpg");
 }
+
+.p-guide__detail {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 225px;
+  height: 42px;
+  color: black;
+  background: white;
+  font-size: 13px;
+  display: flex;
+  /* display: none; */
+  align-items: center;
+  opacity: 0;
+}
+
 .p-guide__detail p {
-  width: 80%; /* テキストを横幅いっぱいにならないようにする */
+  margin: 0 auto;
+}
+
+.p-guide__listRight:hover .p-guide__detail {
+  opacity: 1;
 }
 
   /* footer */
-  footer{
-    background-color: #abb8c330;
-  }
-
-  .p-footer__top{
-    display: flex;
-    width: 1080px;
-    justify-content: space-between;
-    margin: 0 auto;
-    padding: 30px 0;
-  }
-
-  .p-footer__left{
-    width: 475px;
-  }
-
-  .p-footer__title{
-    display: flex;
-  }
-
-  .p-footer__title p{
-    font-size: 18px;
-  }
-
-  .p-footer__sns{
-    display: flex;
-    margin-left: 40px;
-  }
-
-  .p-footer__facebook{
-    background-image: url("../img/footer/facebook.svg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 30px;
-    height: 30px;
-  }
-
-  .p-footer__instagram{
-    background-image: url("../img/footer/instagram.svg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 30px;
-    height: 30px;
-    margin-left: 10px;
-  }
-
-  .p-footer__nav{
-    display: flex;
-    list-style: none;
-  }
-
-  .p-footer__nav li{
-    margin: 0 3px;
-    border-bottom: 1px solid black;
-  }
-  
-  .p-footer__right{
-    width: 620px;
-  }
-
-  .p-footer__rightTop{
-    display: flex;
-  }
-
-
-
-  .p-footer__bottom{
-    color: white;
-    background-color: black;
-  }
-
-  .p-footer__bottomCover{
-    display: flex;
-    width: 1080px;
-    font-size: 12px;
-    padding: 10px 0;
-    justify-content: space-between;
-    margin: 0 auto;
-  }
-
-  .p-footer__bottomList{
-    display: flex;
-    list-style: none;
-  }
-
-  .p-footer__bottomList li{
-    margin-left: 10px;
-    border-bottom: 1px solid white;
-    cursor: pointer;
-  }
-
-  .p-footer__bottomList li:hover{
-    border-bottom: none;
-  }
+  /* footer.cssに記載 */
 
 }

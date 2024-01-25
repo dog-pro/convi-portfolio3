@@ -44,7 +44,13 @@
     background-color: #000;
   }
 
-  .slick-prev:before, .slick-next:before{
+  .slick-prev:before{
+    /* position: relative; */
+    position: absolute;
+    left: 2px;
+    top: 50%;
+    transform: translateY(-50%);
+
     display: block;
     width: 58px;
     height: 58px;
@@ -53,7 +59,24 @@
     overflow: hidden;
     background-image: url("../img/header/circle_slideshow.png");
     /* background: url(../img/common/circle_slideshow.png) left top no-repeat; */
-    position: relative;
+    
+  }
+
+  .slick-next:before{
+    /* position: relative; */
+    position: absolute;
+    right: 2px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    display: block;
+    width: 58px;
+    height: 58px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    background-image: url("../img/header/circle_slideshow.png");
+    /* background: url(../img/common/circle_slideshow.png) left top no-repeat; */
   }
 
 
@@ -61,5 +84,80 @@
 
 /* SP style */
 @media screen and (max-width: 768px){
+  /* ページ再読み込み時、スライダーが一瞬縦並びになる現象の対処 */
+  .slider{
+    visibility: hidden;
+  }
+
+  .slider.slick-initialized{
+    visibility: visible;
+  }
+
+  .slick-prev,.slick-next{
+    z-index: 1;
+  }
+
+  .slick-prev{
+    left: 10px
+  }
+
+  .slick-next{
+    right: 10px;
+  }
+
+  .slick-dots{
+    text-align: right;
+  }
+
+  .slick-dots li button:before{
+    display: block;
+    width: 24px;
+    height: 1px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    background-color: #c3c3c3;
+    -webkit-transition: background-color .5s ease-in-out 0s;
+    transition: background-color 0.5s ease-in-out 0s;
+  }
+  
+  .slick-dots li.slick-active button:before{
+    background-color: #000;
+  }
+
+  .slick-prev:before{
+    /* position: relative; */
+    position: absolute;
+    left: 2px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    display: block;
+    width: 58px;
+    height: 58px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    background-image: url("../img/header/circle_slideshow.png");
+    /* background: url(../img/common/circle_slideshow.png) left top no-repeat; */
+    
+  }
+
+  .slick-next:before{
+    /* position: relative; */
+    position: absolute;
+    right: 2px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    display: block;
+    width: 58px;
+    height: 58px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    background-image: url("../img/header/circle_slideshow.png");
+    /* background: url(../img/common/circle_slideshow.png) left top no-repeat; */
+  }
 
 };

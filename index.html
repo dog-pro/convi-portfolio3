@@ -18,13 +18,20 @@
   <link rel="stylesheet" href="./assets/stylesheet/styleSP.css">
   <link rel="stylesheet" href="./assets/stylesheet/slick.css">
   <link rel="stylesheet" href="./assets/stylesheet/hamburger.css">
+  <link rel="stylesheet" href="./assets/stylesheet/footer.css">
   
   <title>長栄館 [公式サイト]｜岩手県雫石の旅館｜鴬宿温泉源泉掛け流しの宿</title>
 </head>
 <body>
   <div class="p-hamburgerPC">
     <div class="p-hamburgerPC__top">
-      <p>空室検索</p>
+
+      <div class="p-hamburgerPC__close c-humburger__button">
+        <span class="barTop"></span>
+        <span class="barBottom"></span>
+      </div>
+
+      <p class="p-hamburgerPC__title">空室検索</p>
       <ul>
         <li>ご宿泊日：　<input type="date" id="date" name="今日の日付" placeholder="日付を選択してください"></li>
         <li>宿泊数：　　<select type="text">
@@ -87,15 +94,54 @@
     </div>
 
     <div class="p-hamburgerPC__bottom">
-      <ul>
-        <li></li>
+      <ul class="p-hamburgerPC__link">
+        <li><a><p>お部屋タイプから探す</p></a></li>
+        <li><a><p>空室カレンダーから探す</p></a></li>
+        <li><a><p>予約内容の確認・変更・取消</p></a></li>
       </ul>
+      <div class="p-hamburgerPC__reserve">
+        <div class="p-hamburgerPC__reserveCover">
+          <p class="p-hamburgerPC__tel">お電話での空室確認・ご予約</p>
+          <div class="p-hamburgerPC__reserveBottom">
+            <p class="p-hamburgerPC__number"></p>
+            <p class="p-hamburgerPC__openhour">ご予約受付時間 9:00〜18:00</p>
+          </div>
+        </div>
+      </div><!--p-hamburgerPC__reserve-->
+
+      <div class="p-hamburgerPC__bestrate">
+        <div class="p-hamburgerPC__bestrateTop">
+          <div class="p-hamburgerPC__bestrateCover">
+            <p class="p-hamburgerPC__bestrateTitle">ベストレート保証</p>
+            <p>ホームページでの宿泊予約が一番お得です。</p>
+          </div>
+        </div><!--p-hamburgerPC__bestrateTop-->
+        <p class="p-hamburgerPC__bestrateBottom">長栄館の公式ホームページでご提供する宿泊料金は「最低価格」であることを保証致します。</p>
+      </div><!--p-hamburgerPC__bestrate-->
     </div>
   </div>
 
   <div class="wrapper">
     <header>
       <nav>
+        <div class="p-navSP">
+          <div class="p-navSP__top">
+            <div class="p-navSP__logo"><img src="../convi-portfolio3/assets/img/header/sp/logo_sp.png" alt="">
+            </div>
+            <div class="p-humburgerSP">
+              <div class="p-humburgerSP__img"></div>
+            </div>
+          </div>
+
+          <div class="p-navSP__bottom">
+            <div class="p-navSP__left">
+              <p><a><img class="p-navSP__leftImg" src="../convi-portfolio3/assets/img/header/sp/tel.png"></a></p>
+            </div>
+
+            <p class="p-navSP__right"><a>プラン・ご予約</a></p>
+          </div>
+        </div>
+
         <div class="p-navTop">
           <div class="p-navTop__cover">
             <div class="p-nav__logo">
@@ -114,7 +160,7 @@
         </div><!--p-navTop-->
 
         <div class="p-nav__bottom">
-          <div class="p-vacant">
+          <div class="p-vacant c-humburger__button">
             <div class="p-vacant__arrow"></div>
             <div class="c-vacant__arrowWhite"></div>
             <p>空室確認・ご予約</p>
@@ -173,36 +219,46 @@
             <ul class="p-information__list">
               <li>
                 <a>
-                  <p>2024.01.01</p>
-                  <p class="p-information__tag">キャンペーン情報</p>
+                  <div class="p-information__listTop">
+                    <p class="p-information__date">2024.01.01</p>
+                    <p class="p-information__tag">キャンペーン情報</p>
+                  </div>
                   <p>【お得な冬休み】未就学児のご宿泊代がインクルーシブキャンペーン開催決定！</p>
                 </a>
               </li>
               <li>
                 <a>
-                  <p>2023.12.25</p>
-                  <p class="p-information__tag">休業情報</p>
+                  <div class="p-information__listTop">
+                    <p class="p-information__date">2023.12.25</p>
+                    <p class="p-information__tag">休業情報</p>
+                  </div>
                   <p>日帰り入浴長期休業のお知らせ(12/25~3/31)</p>
                 </a>
               </li>
               <li>
                 <a>
-                  <p>2023.11.14</p>
-                  <p class="p-information__tag">お知らせ</p>
+                  <div class="p-information__listTop">
+                    <p class="p-information__date">2023.11.14</p>
+                    <p class="p-information__tag">お知らせ</p>
+                  </div>
                   <p>屋根の部分修繕工事のお知らせ</p>
                 </a>
               </li>
               <li>
                 <a>
-                  <p>2023.11.11</p>
-                  <p class="p-information__tag">キャンペーン情報</p>
+                  <div class="p-information__listTop">
+                    <p class="p-information__date">2023.11.11</p>
+                    <p class="p-information__tag">キャンペーン情報</p>
+                  </div>
                   <p>【12月～2月限定】スペシャルサンデープランリリース！</p>
                 </a>
               </li>
               <li>
                 <a>
-                  <p>2023.01.27</p>
-                  <p class="p-information__tag">お知らせ</p>
+                  <div class="p-information__listTop">
+                    <p class="p-information__date">2023.01.27</p>
+                    <p class="p-information__tag">お知らせ</p>
+                  </div>
                   <p>Traveller Review Awards 2023受賞いたしました！</p>
                 </a>
               </li>
@@ -301,9 +357,30 @@
             </div><!--p-dish__contents-->
 
             <ul class="p-dish__list">
-              <li><a>ご夕食</a></li>
-              <li><a>ご朝食</a></li>
-              <li><a>追加料理</a></li>
+              <li>
+                <a>
+                  <div class="p-dish__listImg dinner"></div>
+                  <img class="p-dish__circle" src="../convi-portfolio3/assets/img/dish/circle.png">
+                  <div class="p-dish__circleHover"></div>
+                <p class="p-dish__title">ご夕食</p>
+                </a>
+              </li>
+              <li>
+                <a>
+                  <div class="p-dish__listImg breakfirst"></div>
+                  <img class="p-dish__circle" src="../convi-portfolio3/assets/img/dish/circle.png">
+                  <div class="p-dish__circleHover"></div>
+                  <p class="p-dish__title">ご朝食</p>                  
+                </a>
+              </li>
+              <li>
+                <a>
+                  <img class="p-dish__listImg adddish"></a>
+                  <img class="p-dish__circle" src="../convi-portfolio3/assets/img/dish/circle.png">
+                  <div class="p-dish__circleHover"></div>
+                  <p class="p-dish__title">追加料理</p>
+                </a>
+              </li>
             </ul>
             
             <div class="c-link">
@@ -361,13 +438,40 @@
               <li><a>温泉・日帰り入浴について</a></li>
             </ul>
 
-            <div class="c-arrow__below"></div>
+            <!-- <div class="c-arrow__below"></div> -->
 
             <div class="p-bathList">
+              <div class="c-arrow__select"></div>
               <ul class="p-bathList__cover">
-                <li><a>露天風呂</a></li>
-                <li><a>大浴場</a></li>
-                <li><a>檜風呂</a></li>
+                <li>
+                  <a>
+                    <div class="p-bathList__img openbath"></div>
+                    <div class="p-bathList__hover">
+                      <p>フォトギャラリーを見る</p>
+                    </div>
+                    <p class="p-bathList__title">露天風呂</p>
+                  </a>
+                </li>
+
+                <li>
+                  <a>
+                    <div class="p-bathList__img bigbath"></div>
+                    <div class="p-bathList__hover">
+                      <p>フォトギャラリーを見る</p>
+                    </div>
+                    <p class="p-bathList__title">大浴場</p>
+                  </a>
+                </li>
+                
+                <li>
+                  <a>
+                    <div class="p-bathList__img hinokibath"></div>
+                    <div class="p-bathList__hover">
+                      <p>フォトギャラリーを見る</p>
+                    </div>
+                    <p class="p-bathList__title">檜風呂</p>
+                  </a>
+                </li>
               </ul>
               <div class="c-link">
                 <div class="c-link__arrow"></div>
@@ -376,7 +480,9 @@
               </div>
             </div>
 
-            <div class="p-bathCommit">
+            <!-- <div class="p-bathCommit is-hidden"> -->
+              <div class="p-bathList is-hidden">
+              <div class="c-arrow__commit"></div>
               <div class="p-bathCommit__cover">
                 <div class="p-bathCommit__left">
                   <h3>何も手を加えない源泉は、<br>本当にわがままです。</h3>
@@ -403,7 +509,9 @@
               </div>
             </div>
             
-            <div class="p-bathAbout">
+            <!-- <div class="p-bathAbout is-hidden"> -->
+            <div class="p-bathList is-hidden">
+              <div class="c-arrow__about"></div>
               <div class="p-bathAbout__top">
                 <div class="p-bathAbout__title">
                   <p>温泉</p>
@@ -449,8 +557,7 @@
                 <div class="c-link__arrowWhite"></div>
                 <p>詳細はこちら</p>
               </div>
-            </div>
-          </div><!--p-bathAbout-->
+            </div><!--p-bathAbout-->
           </div><!--p-bath-->
         </section>
 
@@ -465,6 +572,7 @@
               <p>日本旅館の伝統を大切にする宿を目指して、<br>忘れさられようとしている「宿の原点」を重視しております。</p>
             </div>
 
+            <!-- left -->
             <div class="p-guide__contents">
               <!-- left -->
               <div class="p-guide__list">
@@ -472,28 +580,31 @@
                   <p class="p-guide__listSpace">カフェスペース</p>
                   <p>梅の木</p>
                 </div>
-                <div class="p-guide__listRight cafe__img"></div>
-              </div>
-              <!-- right -->
-              <div class="p-guide__list">
-                <div class="p-guide__listLeft">
-                  <p class="p-guide__listSpace">ラウンジスペース</p>
-                  <p>日本酒BAR</p>
-                </div>
-                <!-- <div class="p-guide__listRight">
+                <!-- right -->
+                <div class="p-guide__listRight">
                   <a>
-                    <img src="../convi-portfolio3/assets/img/guide/guide_lounge.jpg" alt="">
+                    <img class="p-guide__listImg cafe"></a>
                     <div class="p-guide__detail">
                       <p>詳しく</p>
                     </div>
                   </a>
-                </div> -->
+                </div>
+              </div>
+
+              <!-- right -->
+              <div class="p-guide__list">
+                <!-- left -->
+                <div class="p-guide__listLeft">
+                  <p class="p-guide__listSpace">ラウンジスペース</p>
+                  <p>日本酒BAR</p>
+                </div>
+                <!-- right -->
                 <div class="p-guide__listRight">
                   <a>
-                  <img src="../convi-portfolio3/assets/img/guide/guide_lounge.jpg" alt="">
-                  <div class="p-guide__detail">
-                    <p>詳しく</p>
-                  </div>
+                    <div class="p-guide__listImg lounge"></div>
+                    <div class="p-guide__detail">
+                      <p>詳しく</p>
+                    </div>
                   </a>
                 </div>
               </div>
@@ -540,11 +651,11 @@
         <!-- right top -->
         <div class="p-footer__rightTop">
           <div>
-            <p>〒020-0574 岩手県岩手郡雫石町鴬宿6-7</p>
-            <p>019-695-2121</p>
+            <p class="p-footer__address">〒020-0574 岩手県岩手郡雫石町鴬宿6-7</p>
+            <p class="p-footer__number">019-695-2121</p>
           </div>
 
-          <div class="p-vacant">
+          <div class="p-vacant c-humburger__button">
             <div class="p-vacant__arrow"></div>
             <div class="c-vacant__arrowWhite"></div>
             <p>空室確認・ご予約</p>
@@ -552,8 +663,7 @@
         </div>
 
         <!-- middle right -->
-        <p>長栄館は盛岡駅から秋田街道46号線繋十文字交差点を左折し、車で約30分の100％源泉掛け流しの宿で、
-          小岩井牧場・田沢湖・乳頭温泉・秋田角館への観光コースとしても至便な旅館。</p>
+        <p class="p-footer__rightMiddle">長栄館は盛岡駅から秋田街道46号線繋十文字交差点を左折し、車で約30分の100％源泉掛け流しの宿で、<br>小岩井牧場・田沢湖・乳頭温泉・秋田角館への観光コースとしても至便な旅館。</p>
       </div>
     </div>
 
@@ -574,6 +684,10 @@
       <!-- jQuery -->
       <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
       <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+      <!-- js -->
+      <!-- <script src="./assets/javaScript/scrolldown.js"></script> -->
+      <script src="./assets/javaScript/hamburger.js"></script>
+      <script src="./assets/javaScript/bath.js"></script>
 
       <!-- スライダー -->
       <script>
@@ -593,5 +707,5 @@
           });
         });
       </script>
-</body>
+  </body>
 </html>

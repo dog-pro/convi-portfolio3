@@ -3,24 +3,341 @@
 /* SP style */
 @media screen and (max-width: 768px){
 
+  .wrapper{
+    font-family: "Source Serif Pro", "游明朝", "Yu Mincho", "游明朝体", "YuMincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HiraMinProN-W3", "Noto Serif JP", "ＭＳ 明朝", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", "HG明朝E", serif;
+  }
+
+  .c-link{
+    position: relative;
+    /* width: 380px; */
+    border: double ;
+    font-size: 13px;
+    padding: 10px 0;
+    margin: 40px 2%;
+    /* margin: 40px auto; */
+    display: flex;
+    align-items: center;
+  }
+
+  .c-link:hover{
+    color: white;
+    background-color: black;
+    border-color: transparent; /*borderのみ非表示*/
+    transition: all 0.5s ease;
+  }
+
+  .c-link p{
+    margin: 0 auto;
+  }
+
+  .c-link__arrow{
+    position: absolute;
+    /* left: 60px; */
+    right: 30px;
+    width: 10px;
+    height: 10px;
+    background-image: url("../img/arrow_down.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: rotate(-90deg);
+  }
+
+  .c-link__arrowWhite{
+    display: none;
+  }
+
+  .c-link:hover .c-link__arrow{
+    display: none;
+  }
+
+  .c-link:hover .c-link__arrowWhite{
+    display: block;
+    position: absolute;
+    /* left: 60px; */
+    right: 30px;
+    width: 10px;
+    height: 10px;
+    background-image: url("../img/arrow_hover.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  
+  .title{
+    width: 100%;
+    height: 140px;
+    color: white;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  h2{
+    margin: 0 auto;
+  }
+
+  section{
+    padding-bottom: 40px;
+  }
+
+  .c-section__logo{
+    text-align: center;
+    padding-bottom: 40px;
+    font-size: 18px;
+  }
+
+  .c-section__logo img{
+    margin: 48px 0;
+  }
+
+  .c-section__logo p{
+    line-height: 2;
+    font-size: 15px;
+  }
+
+  .p-main__logo{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 165px;
+    height: 170px;
+    background-image: url("../img/header/main_logo.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
   
   /* header */
+  .p-mainPhoto img{
+    width: 100%;
+    height: 919px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    transform: scale(1.4);
+    animation: animationZoom 15s ease-in-out infinite;
+  }
+
+  .p-header__information{
+    display: none;
+  }
 
   /* nav */
+  .p-navTop{
+    display: none;
+  }
+
+  .p-navSP{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+  }
+
+  /* top */
+  .p-navSP__top{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+  }
+
+  .p-navSP__logo{
+    width: 40px;
+    height: 30px;
+    margin: 0 auto;
+  }
+
+  .p-navSP__logo img{
+    width: 100%;
+    cursor: pointer;
+  }
+
+  /* bottom */
+  .p-navSP__bottom{
+    display: flex;
+    width: 100%;
+    height: 50px;
+  }
+
+  .p-navSP__left{
+    width: 50%;
+    background: rgba(0, 0, 0, 0.9);
+    border-right: 0.5px white solid;
+    display: flex;
+  }
+
+  .p-navSP__left p{
+    margin: 0 auto;
+  }
+
+  .p-navSP__leftImg{
+    width: 105px;
+    height: 50px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: contain;
+  }
+
+  .p-navSP__right{
+    width: 50%;
+    background: rgba(0, 0, 0, 0.9);
+    border-left: 0.5px white solid;
+  }
 
 
   /* main */
+
+
+
   /* information */
+  .p-information{
+
+  }
+
+  .p-information__title{
+    font-size: 18px;
+    padding: 40px 0 35px;
+    text-align: center;
+    border-bottom: 1px dotted #c3c3c3;
+  }
+
+  .p-information__list{}
+
+  .p-information__list li{
+    position: relative;
+    padding: 20px 0;
+    border-bottom: 1px dotted #c3c3c3;
+  }
+
+  .p-information__list li::after{
+    content: "";
+    position: absolute;
+  }
+
+  .p-information__listTop{
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+
+  .p-information__date{
+    color: #838383;
+    /* font-size: 13px; */
+    width: 100px;
+  }
+
+  .p-information__tag{
+    /* display: inline-block; */
+    
+    color: #fff;
+    text-align: center;
+    letter-spacing: normal;
+    width: 120px;
+    background-color: #000;
+    padding: 5px 0 3px;
+  }
+
+  .p-information__banner{
+    padding: 60px 10px 0;
+    list-style: none;
+  }
+
+  .p-information__banner li{
+    margin-top: 15px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    aspect-ratio: 3/2;
+    width: 100%;
+    height: 300px;
+  }
+
+  .p-information__banner li:hover{
+    transition: all 0.5s ease;
+    opacity: 0.7;
+  }
+
+  .p-information__banner :nth-child(1){
+    background-image: url("../img/information/inclusive.jpg");
+  }
+
+  .p-information__banner :nth-child(2){
+    background-image: url("../img/information/online_shop.jpg");
+  }
+
+  .p-information__banner :nth-child(3){
+    background-image: url("../img/information/sakebar.png");
+    margin-bottom: 15px;
+  }
 
   /* Philosophy */
+  .p-philosophy{
+    margin-bottom: 80px;
+  }
+
+  .p-philosophy__img{
+    background-image: url("../img/philosophy/philosophy_img.jpg");
+  }
+
+  .p-philosophy__cover{
+    width: 1080px;
+    text-align: center;
+    font-size: 12px;
+    /* margin: 0 auto; */
+  }
+
+  .p-philosophy__contents{
+    /* display: flex; */
+    align-items: center;
+  }
+
+  .p-philosophy__left{
+    /* width: 48%; */
+    line-height: 1.7;
+  }
+
+  .p-philosophy__contentsTop{
+    margin-bottom: 30px;
+  }
+
+  .p-philosophy__right{
+    display: none;
+  }
+
+  /* スライド画像 */
+  /* slick.cssに記載あり */
 
   /* dish */
+  
+  .p-dish__img{
+    background-image: url("../img/dish/dish_img.jpg");
+  }
 
   /* room */
+  .p-room__img{
+    background-image: url("../img/room/room_img.jpg");
+  }
 
   /* bath */
+  .p-bath__img{
+    background-image: url("../img/bath/bath_img.jpg");
+  }
 
   /* guide */
+  .p-guide__img{
+    background-image: url("../img/guide/guide_img.jpg");
+  }
 
   /* footer */
 
