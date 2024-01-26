@@ -38,6 +38,10 @@
     margin-left: 40px;
   }
 
+  .p-footerSP__sns{
+    display: none;
+  }
+
   .p-footer__facebook{
     background-image: url("../img/footer/facebook.svg");
     background-size: cover;
@@ -158,5 +162,217 @@
 
   /* SP style */
 @media screen and (max-width: 768px){
+
+  /* footer */
+  footer{
+    padding:40px 0 51px;
+    background-color: #abb8c330;
+    font-family: "Source Serif Pro", "游明朝", "Yu Mincho", "游明朝体", "YuMincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HiraMinProN-W3", "Noto Serif JP", "ＭＳ 明朝", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", "HG明朝E", serif;
+  }
+
+  .p-footer__top{
+    padding:0 20px;
+    margin: 0 auto;
+  }
+
+  .p-footer__left{}
+
+  .p-footer__title{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    height: 54px;
+  }
+
+  .p-footer__title p{
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+
+  .p-footer__sns{
+    display: none;
+  }
+
+  .p-footer__facebook{
+    background-image: url("../img/footer/facebook.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+
+  .p-footer__facebook:hover{
+    opacity: 0.7;
+  }
+
+  .p-footer__instagram{
+    background-image: url("../img/footer/instagram.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+
+  .p-footer__instagram:hover{
+    opacity: 0.7;
+  }
+
+  .p-footer__nav{
+    display: none;
+  }
+
+  .p-footer__nav li{
+    margin: 0 3px;
+    border-bottom: 1px solid black;
+    cursor: pointer;
+  }
+
+  .p-footer__nav li:hover{
+    border-bottom: none;
+  }
+  
+  .p-footer__right{
+    width: 620px;
+  }
+
+  .p-footer__rightTop{
+    position: relative;
+    display: flex;
+    padding-left: 30px;
+    font-size: 12px;
+    line-height: 27px;
+  }
+
+  .p-footer__address{
+    border-bottom: 0.5px black solid;
+  }
+
+  .p-footer__address::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 23px;
+    height: 23px;
+    background-image: url("../img/footer/icon_map.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .p-footer__number{
+    border-bottom: 0.5px black solid;
+  }
+
+  .p-footer__number::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 23px;
+    height: 23px;
+    background-image: url("../img/footer/icon_phone.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .p-footer__bottom{
+    color: white;
+    background-color: black;
+  }
+
+  .p-footer__bottomCover{
+    font-size: 12px;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  .p-footer__bottomList{
+    display: none;
+  }
+
+  .p-footer__bottomList li{
+    margin-left: 10px;
+    border-bottom: 1px solid white;
+    cursor: pointer;
+  }
+
+  .p-footer__bottomList li:hover{
+    border-bottom: none;
+  }
+
+  .p-footer__rightMiddle{
+    margin-top: 20px 0;
+    font-size: 13px;
+    line-height: 2.5;
+  }
+
+  .p-vacant{
+    display: none;
+  }
+
+  .p-vacantSP{
+    position: relative;
+    width: 100%;
+    height: 35px;
+
+    margin: 40px 0;
+
+    display: flex;
+    align-items: center;
+    color: black;
+    background-color: white;
+    cursor: pointer;
+    border: #c8c8c8 1px solid;
+  }
+
+  .p-vacantSP p{
+    margin: 0 auto;
+  }
+
+  .p-vacantSP__arrow{
+    position: absolute;
+    right: 30px;
+    width: 10px;
+    height: 10px;
+    background-image: url("../img/arrow_down.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: rotate(-90deg);
+  }
+
+  .p-footerSP__sns{
+    width: 100%;
+    display: flex;
+    /* align-items: center; */
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .p-footerSP__facebook{
+    margin: 0 40px;
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/footer/facebook.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .p-footerSP__instagram{
+    margin: 0 40px;
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/footer/instagram.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 
 }

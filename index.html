@@ -16,6 +16,7 @@
   <!-- css -->
   <link rel="stylesheet" href="./assets/stylesheet/style.css">
   <link rel="stylesheet" href="./assets/stylesheet/styleSP.css">
+  <link rel="stylesheet" href="./assets/stylesheet/navfixed.css">
   <link rel="stylesheet" href="./assets/stylesheet/slick.css">
   <link rel="stylesheet" href="./assets/stylesheet/hamburger.css">
   <link rel="stylesheet" href="./assets/stylesheet/footer.css">
@@ -84,7 +85,128 @@
           <option>10</option>
         </select> 名　</li>
       </ul>
-      <div class="p-hamburgerPC__kids">お子様</div>
+
+      <div class="p-hamburgerPC__kids slide">お子様</div>
+      <ul class="p-hamburgerPC__kidsList">
+        <p>小学生</p>
+        <li>
+          <div>
+            <p>食事：プラン標準のお食事</p>
+            <p>寝具：あり</p>
+          </div>
+          <div>
+            <select type="text">
+              <option>0</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10</option>
+            </select>
+            名
+          </div>
+        </li>
+
+        <p>幼児</p>
+        <li>
+          <div>
+            <p>食事：子供用のお食事</p>
+            <p>寝具：あり</p>
+          </div>
+          <div>
+            <select type="text">
+              <option>0</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10</option>
+            </select>
+            名
+          </div>
+        </li>
+        <li>
+          <div>
+            <p>食事：なし</p>
+            <p>寝具：あり</p>
+          </div>
+          <div>
+            <select type="text">
+              <option>0</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10</option>
+            </select>
+            名
+          </div>
+        </li>
+        <li>
+          <div>
+            <p>食事：子供用のお食事</p>
+            <p>寝具：なし</p>
+          </div>
+          <div>
+            <select type="text">
+              <option>0</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10</option>
+            </select>
+            名
+          </div>
+        </li>
+        <li>
+          <div>
+            <p>食事：なし</p>
+            <p>寝具：なし</p>
+          </div>
+          <div>
+            <select type="text">
+              <option>0</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10</option>
+            </select>
+            名
+          </div>
+        </li>
+
+        <div class="p-hamburgerPC__kidsClose slide">
+          <p>閉じる</p>
+        </div>
+
+      </ul>
 
       <div class="p-search">
         <div class="p-search__arrow"></div>
@@ -335,6 +457,7 @@
 
             <div class="p-dish__contents">
               <div class="p-dish__left">
+                <div class="arrow-prev"></div>
                 <ul class="slider__manual">
                   <li><a><img src="./assets/img/dish/dishmain1.jpg"></a></li>
                   <li><a><img src="./assets/img/dish/dishmain2.jpg"></a></li>
@@ -343,6 +466,7 @@
                   <li><a><img src="./assets/img/dish/dishmain5.jpg"></a></li>
                   <li><a><img src="./assets/img/dish/dishmain6.jpg"></a></li>
                 </ul>
+                <div class="arrow-next"></div>
               </div>
 
               <div class="p-dish__contentsRight">
@@ -403,15 +527,56 @@
               <p>構われ過ぎない快適さを大切にしております。<br>日本旅館のおもてなしを心掛け、ゆったりとくつろげる時間を提供致します。</p>
             </div>
             <ul class="p-room__list">
-              <li><a>特別室詳しく
-                和洋室／定員：5名お部屋から宿泊プランを探す
-                特別室</a></li>
-              <li><a>和洋室詳しく
-                和洋室／定員：4名お部屋から宿泊プランを探す
-                和洋室</a></li>
-              <li><a>和室詳しく
-                定員：4名お部屋から宿泊プランを探す
-                和室</a></li>
+              <li>
+                <div class="p-room__listImg special"></div>
+                <div class="p-room__listTitle">
+                  <p>特別室</p>
+                </div>
+                <div class="p-room__detail">
+                  <a><p>詳しく</p></a>
+                </div>
+
+                <div class="p-room__capacity">
+                  <a><p>和洋室／定員：5名</p></a>
+                </div>
+                <div class="p-room__search">
+                  <a><p>お部屋から宿泊プランを探す</p></a>
+                </div>
+              </li>
+
+              <li>
+                <div class="p-room__listImg western"></div>
+                <div class="p-room__listTitle">
+                  <p>和洋室</p>
+                </div>
+                <div class="p-room__detail">
+                  <a><p>詳しく</p></a>
+                </div>
+
+                <div class="p-room__capacity">
+                  <a><p>和洋室／定員：4名</p></a>
+                </div>
+                <div class="p-room__search">
+                  <a><p>お部屋から宿泊プランを探す</p></a>
+                </div>
+              </li>
+
+              <li>
+                <div class="p-room__listImg japanese"></div>
+                <div class="p-room__listTitle">
+                  <p>和室</p>
+                </div>
+                <div class="p-room__detail">
+                  <a><p>詳しく</p></a>
+                </div>
+
+                <div class="p-room__capacity">
+                  <a><p>定員：4名</p></a>
+                </div>
+                <div class="p-room__search">
+                  <a><p>お部屋から宿泊プランを探す</p></a>
+                </div>
+              </li>
             </ul>
 
             <div class="c-link">
@@ -433,9 +598,26 @@
               <p>当地に噴出した温泉の湧出量は、毎分1,016リットルを誇り、質・量ともに一級品です。<br>長栄館は、鶯宿温泉で専用自家源泉を持つ唯一の宿です。</p>
             </div>
             <ul class="p-bath__select">
-              <li><a>露天風呂・大浴場・檜風呂</a></li>
-              <li><a>源泉掛け流しのこだわり</a></li>
-              <li><a>温泉・日帰り入浴について</a></li>
+              <li>
+                <a>露天風呂・大浴場・檜風呂
+                  <div class="c-arrow__selectSP"></div>
+                  <div class="c-arrow__WhiteSP"></div>
+                </a>
+              </li>
+              <li>
+                <a>
+                  源泉掛け流しのこだわり
+                  <div class="c-arrow__selectSP"></div>
+                  <div class="c-arrow__WhiteSP"></div>
+                </a>
+              </li>
+              <li>
+                <a>
+                  温泉・日帰り入浴について
+                  <div class="c-arrow__selectSP"></div>
+                  <div class="c-arrow__WhiteSP"></div>
+                </a>
+              </li>
             </ul>
 
             <!-- <div class="c-arrow__below"></div> -->
@@ -450,6 +632,7 @@
                       <p>フォトギャラリーを見る</p>
                     </div>
                     <p class="p-bathList__title">露天風呂</p>
+                    <div class="c-arrow__blackSP"></div>
                   </a>
                 </li>
 
@@ -460,6 +643,7 @@
                       <p>フォトギャラリーを見る</p>
                     </div>
                     <p class="p-bathList__title">大浴場</p>
+                    <div class="c-arrow__blackSP"></div>
                   </a>
                 </li>
                 
@@ -470,6 +654,7 @@
                       <p>フォトギャラリーを見る</p>
                     </div>
                     <p class="p-bathList__title">檜風呂</p>
+                    <div class="c-arrow__blackSP"></div>
                   </a>
                 </li>
               </ul>
@@ -492,12 +677,14 @@
                 </div>
 
                 <div class="p-bathCommit__right">
+                  <div class="arrow-prev"></div>
                   <ul class="slider__manual">
                     <li><a><img src="./assets/img/bath/commit_01.jpg"></a></li>
                     <li><a><img src="./assets/img/bath/commit_02.jpg"></a></li>
                     <li><a><img src="./assets/img/bath/commit_03.jpg"></a></li>
                     <li><a><img src="./assets/img/bath/commit_04.jpg"></a></li>
                   </ul>
+                  <div class="arrow-next"></div>
                 </div>
               </div>
 
@@ -583,7 +770,8 @@
                 <!-- right -->
                 <div class="p-guide__listRight">
                   <a>
-                    <img class="p-guide__listImg cafe"></a>
+                    <img class="p-guide__listImg cafe">
+                  </a>
                     <div class="p-guide__detail">
                       <p>詳しく</p>
                     </div>
@@ -665,6 +853,18 @@
         <!-- middle right -->
         <p class="p-footer__rightMiddle">長栄館は盛岡駅から秋田街道46号線繋十文字交差点を左折し、車で約30分の100％源泉掛け流しの宿で、<br>小岩井牧場・田沢湖・乳頭温泉・秋田角館への観光コースとしても至便な旅館。</p>
       </div>
+      
+    <div class="p-vacantSP c-humburger__button">
+      <div class="p-vacantSP__arrow"></div>
+      <div class="c-vacantSP__arrowWhite"></div>
+      <p>空室確認・ご予約</p>
+    </div>  
+
+    <div class="p-footerSP__sns">
+      <div class="p-footerSP__facebook"></div>
+      <div class="p-footerSP__instagram"></div>
+    </div>
+
     </div>
 
       <div class="p-footer__bottom">
@@ -688,6 +888,7 @@
       <!-- <script src="./assets/javaScript/scrolldown.js"></script> -->
       <script src="./assets/javaScript/hamburger.js"></script>
       <script src="./assets/javaScript/bath.js"></script>
+      <!-- <script src="./assets/javaScript/navclip.js"></script> -->
 
       <!-- スライダー -->
       <script>

@@ -319,7 +319,6 @@
   /* slick.cssに記載あり */
 
   /* dish */
-  
   .p-dish__img{
     background-image: url("../img/dish/dish_img.jpg");
   }
@@ -334,10 +333,251 @@
     background-image: url("../img/bath/bath_img.jpg");
   }
 
+  .p-bath__select{
+    list-style: none;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+
+  .p-bath__select li{
+    position: relative;
+    width: 100%;
+    height: 20px;
+    border: double;
+    font-size: 16px;
+    padding: 10px 0;
+    margin:0 18px 10px 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .p-bath__select li:hover{
+    color: white;
+    background-color: black;
+    border-color: transparent; /*borderのみ非表示*/
+    transition: all 0.5s ease;
+  }
+
+  .p-bath__select li a{
+    margin: 0 auto;
+  }
+  
+  .c-arrow__select , .c-arrow__commit , .c-arrow__about{
+    display: none;
+  }
+
+  .c-arrow__selectSP{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%) rotate(-90deg);
+    width: 10px;
+    height: 10px;
+    background-image: url("../img/arrow_down.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .c-arrow__WhiteSP{
+    display: none;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%) ;
+    width: 10px;
+    height: 10px;
+    background-image: url("../img/arrow_hover.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .p-bath__select li:hover .c-arrow__blackSP{
+    display: none;
+    transition: all 0.5s ease;
+  }
+
+  .p-bath__select li:hover .c-arrow__WhiteSP{
+    display: block;
+    transition: all 0.5s ease;
+  }
+
+  .p-bathList{
+    position: relative;
+    /* width: 1080px; */
+    margin: 104px auto 0;
+  }
+
+  .p-bathList__cover{
+    height: 500px;
+    list-style: none;
+    font-size: 16px;
+    color: white;
+    padding: 0 10px;
+  }
+
+  .p-bathList__cover li{
+    position: relative;
+    width: 100%;
+    margin: 0 2px;
+    cursor: pointer;
+    background-color: black;
+  }
+
+  .c-arrow__blackSP{
+    position: absolute;
+    top: 50%;
+    right: 27px;
+    transform: translateY(-50%) rotate(-90deg);
+    width: 10px;
+    height: 10px;
+    background-image: url("../img/arrow_down.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 2;
+  }
+
+  .p-bathList__cover li::after{
+    content: "";
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 25px;
+    height: 25px;
+    background-image: url("../img/bath/circle.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  .p-bathList__img{
+    width: 100%;
+    height: 140px;
+    margin-bottom: 10px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+  }
+
+  .p-bathList__hover{
+    display: none;
+  }
+
+  .p-bathList__title{
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .openbath{
+    background-image: url("../img/bath/openbath.jpg");
+  }
+  .bigbath{
+    background-image: url("../img/bath/big_bathroom.jpg");
+  }
+  .hinokibath{
+    background-image: url("../img/bath/hinoki_bath.jpg");
+  } 
+
+  .is-hidden{
+    transition: .6s;
+    display: none;
+  }
+  
+  /* commit */
+  .p-bathCommit__cover{
+    text-align: center;
+  }
+
+  .p-bathCommit__left{
+    /* width: 50%; */
+    line-height: 1.7;
+  }
+
+  .p-bathCommit__left h3{
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+  .p-bathCommit__left p{
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+
+  .p-bathCommit__right{
+    position: relative;
+    width: 100%;
+    margin: 2px 0;
+    padding: 0 10px;
+  }
+
   /* guide */
+  .p-guide{
+    padding-bottom: 80px;
+  }
+
   .p-guide__img{
     background-image: url("../img/guide/guide_img.jpg");
   }
+
+  .p-guide__contents{
+    display: flex;
+    margin: 0 auto;
+  }
+
+  .p-guide__list{
+    width: 49%;
+    margin: 0 10px;
+    /* contentsListの上下入れ替え */
+    display: flex;
+    flex-direction: column;
+  }
+
+  .p-guide__listLeft{
+    position: relative;
+    order: 2;
+    text-align: center;
+  }
+
+  .p-guide__listLeft p{
+    font-size: 13px;
+    margin: 10px 0;
+  }
+
+  .p-guide__listSpace{
+    font-size: 9px !important; 
+  }
+
+  /* right */
+  .p-guide__listRight {
+    order: 1;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .p-guide__listImg {
+    width: 100%;
+    height: 12em;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+.cafe{
+  background-image: url("../img/guide/guide_cafe.jpg");
+}
+.lounge{
+  background-image: url("../img/guide/guide_lounge.jpg");
+}
+
+.p-guide__detail {
+  display: none;
+}
 
   /* footer */
 
