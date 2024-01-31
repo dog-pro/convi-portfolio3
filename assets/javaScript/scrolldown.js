@@ -1,9 +1,11 @@
-const btn = document.getElementById(".p-main__scrolldown");
 
-var target = $(".p-information").offset().top;
+const btn = document.querySelector(".p-main__scrolldown");
+let target = $(".p-information").offset().top;
 
 btn.addEventListener("click", () => {
-  window.scroll({
+  target = $(".p-information").offset().top;
+
+  window.scrollTo({
     top: target,
     behavior: "smooth"
   });

@@ -17,7 +17,7 @@
   }
 
   .slick-prev{
-    left: 10px
+    left: 10px;
   }
 
   .slick-next{
@@ -84,7 +84,9 @@
 
 /* SP style */
 @media screen and (max-width: 768px){
+
   /* ページ再読み込み時、スライダーが一瞬縦並びになる現象の対処 */
+
   .slider{
     visibility: hidden;
   }
@@ -98,7 +100,7 @@
   }
 
   .slick-prev{
-    left: 10px
+    left: 10px;
   }
 
   .slick-next{
@@ -109,9 +111,19 @@
     text-align: right;
   }
 
+  .slick-dots li {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0 1px;
+    padding: 0;
+    cursor: pointer;
+}
+
   .slick-dots li button:before{
     display: block;
-    width: 24px;
+    width: 12px;
     height: 1px;
     text-indent: 100%;
     white-space: nowrap;
@@ -126,9 +138,8 @@
   }
 
   .slick-prev:before{
-    /* position: relative; */
     position: absolute;
-    left: 2px;
+    left: 5px;
     top: 50%;
     transform: translateY(-50%);
 
@@ -139,13 +150,12 @@
     white-space: nowrap;
     overflow: hidden;
     background-image: url("../img/header/circle_slideshow.png");
-    /* background: url(../img/common/circle_slideshow.png) left top no-repeat; */
+    
   }
 
   .slick-next:before{
-    /* position: relative; */
     position: absolute;
-    right: 2px;
+    right: 5px;
     top: 50%;
     transform: translateY(-50%);
 
@@ -156,8 +166,6 @@
     white-space: nowrap;
     overflow: hidden;
     background-image: url("../img/header/circle_slideshow.png");
-    /* background: url(../img/common/circle_slideshow.png) left top no-repeat; */
   }
-
 
 };

@@ -17,6 +17,7 @@
     margin: 40px auto;
     display: flex;
     align-items: center;
+    cursor: pointer;
   }
 
   .c-link:hover{
@@ -111,6 +112,8 @@
   }
 
   .p-navTop{
+    width: 100%;
+    background-color: white;
     display: none;
   }
 
@@ -230,8 +233,7 @@
 
   .p-mainPhoto {
     width: 100%;
-    /* height: 865px; */
-    /* margin: 0 auto; */
+
   }
 
   .p-mainPhoto img{
@@ -290,6 +292,8 @@
     /* アニメーション動作時間の指定 */
     animation-timing-function: ease;
     /* アニメーションの動き指定（徐々に早く）*/
+
+    cursor: pointer;
   }
 
   .p-main__scrolldown > p{
@@ -350,14 +354,20 @@
     list-style: none;
     text-align: center;
     /* display: none; */
-    opacity: 0;/* ドロップダウンメニューの非表示 */
+    /* ドロップダウンメニューの非表示 */
+    opacity: 0;
     transform-origin: center top; /* 変形を適応する基準を設定 */
-    transition: .3s; /* 表示の変化をアニメーション化 */
+    transition:opacity .3s; /* 表示の変化をアニメーション化 */
   }
 
   .p-language__top:hover + .p-language__cover{
     opacity: 1;
   }
+
+  
+/* .open{
+  opacity: 1;
+} */
 
   .p-language__cover li{
     font-size: 12px;
@@ -365,11 +375,12 @@
     margin: 1px;
     background-color: rgba(0, 0, 0, 0.6);
     border: none;
-    cursor: pointer;
   }
 
   .p-language__cover li:hover{
     background-color: black;
+    cursor: pointer;
+
   }
 
   .p-header__information address{
@@ -477,6 +488,7 @@
   .p-information__banner li:hover{
     transition: all 0.5s ease;
     opacity: 0.7;
+    cursor: pointer;
   }
 
   .p-information__banner :nth-child(1){
@@ -578,7 +590,6 @@
     background-repeat: no-repeat;
     z-index: 2;
   }
-
 
   .p-dish__contentsRight{
     margin: 0 auto;
@@ -761,6 +772,8 @@
 
     color: #fff;
     opacity: 0;
+
+    cursor: pointer;
   }
 
   .p-room__list li:hover .p-room__detail{
@@ -809,6 +822,8 @@
     background-color: rgba(255, 255, 255, 0.1);
     color: #fff;
     opacity: 0;
+
+    cursor: pointer;
   }
 
   .p-room__listTitle p , .p-room__detail > a ,
@@ -819,8 +834,12 @@
   .p-room__capacity:hover{
     opacity: 0;
   }
-  .p-room__capacity:hover .p-room__search{
+
+  .p-room__search:hover{
     opacity: 1;
+    color: black;
+    background-color: #fff;
+
   }
 
   .special{
@@ -857,6 +876,7 @@
     margin-right: 18px;
     display: flex;
     align-items: center;
+    cursor: pointer;
   }
 
   .p-bath__select li a{

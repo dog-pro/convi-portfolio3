@@ -251,6 +251,8 @@
 
   .p-footer__address{
     border-bottom: 0.5px black solid;
+    line-height: 1.5;
+    margin-bottom: 15px;
   }
 
   .p-footer__address::before{
@@ -267,6 +269,7 @@
 
   .p-footer__number{
     border-bottom: 0.5px black solid;
+    line-height: 1.5;
   }
 
   .p-footer__number::before{
@@ -348,11 +351,10 @@
   }
 
   .p-footerSP__sns{
-    width: 100%;
+    width: 220px;
     display: flex;
-    /* align-items: center; */
-    margin-bottom: 40px;
-    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 40px;
   }
 
   .p-footerSP__facebook{

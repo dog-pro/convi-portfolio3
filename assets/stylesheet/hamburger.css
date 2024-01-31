@@ -15,6 +15,10 @@
     font-family: "Source Serif Pro", "游明朝", "Yu Mincho", "游明朝体", "YuMincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HiraMinProN-W3", "Noto Serif JP", "ＭＳ 明朝", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", "HG明朝E", serif;
   }
 
+  .p-humburgerSPbutton{
+    display: none;
+  }
+
   .p-humburgerSP{
     display: none;
   }
@@ -215,6 +219,7 @@
     position: relative;
     padding-left: 20px;
     line-height: 1.5;
+    cursor: pointer;
   }
 
   .p-hamburgerPC__link li p::before{
@@ -233,7 +238,6 @@
   }
 
   .p-hamburgerPC__reserve{
-    /* height: 110px; */
     color: black;
     background-color: white;
     padding: 16px 16px 16px 0;
@@ -410,14 +414,14 @@
     display: none;
   }
 
-  .p-humburgerSP{
+  .p-humburgerSPbutton{
     position: absolute;
     right: 0;
     width: 55px;
     height: 100%;
   }
 
-  .p-humburgerSP::before{
+  .p-humburgerSPbutton::before{
     position: absolute;
     content: '';
     height: 30px;
@@ -429,11 +433,7 @@
     margin: -15px 0 0;
   }
 
-  .p-humburgerSP__img{
-    cursor: pointer;
-  }
-
-  .p-humburgerSP__img::before{
+  .p-humburgerSPbutton__img{
     position: absolute;
     width: 100%;
     height: 100%;
@@ -442,8 +442,10 @@
     background-size: 30px 15px;
     background-position: center;
     background-repeat: no-repeat;
+    cursor: pointer;
   }
-  .p-humburgerSP__img::after{
+
+  .p-humburgerSPbutton__close{
     position: absolute;
     width: 100%;
     height: 100%;
@@ -454,4 +456,331 @@
     background-repeat: no-repeat;
     display: none;
   }
+
+.active{
+  display: block;
+}
+
+/* p-humburgerSP */
+.p-humburgerSP{
+  display: none;
+
+  height: 100%;
+  padding:70px 15px 0;
+  margin: 0 auto;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.95);
+  overflow-y: scroll;
+  font-family: "Source Serif Pro", "游明朝", "Yu Mincho", "游明朝体", "YuMincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HiraMinProN-W3", "Noto Serif JP", "ＭＳ 明朝", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", "HG明朝E", serif;
+}
+
+.p-humburgerSP__language{
+  max-width: 760px;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.p-humburgerSP__language li{
+  width: 30%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  margin: 0 5px 10px;
+  border: #c3c3c3 1px solid;
+  cursor:pointer;
+}
+
+.p-humburgerSP__language a{
+  margin: 0 auto;
+}
+
+.p-humburgerSP__nav{
+  margin-top: 15px;
+  text-align: center;
+  list-style: none;
+  line-height: 2;
+}
+
+.p-humburgerSP__nav li{
+  position: relative;
+  border-bottom: #c3c3c3 1px solid;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.p-humburgerSP__nav li:last-child{
+  border: none;
+}
+
+.p-humburgerSP__search{
+  list-style: none;
+  margin-top: 15px;
+
+}
+
+.p-humburgerSP__search li{
+  margin-bottom: 15px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  border: double;
+  cursor: pointer;
+}
+
+.p-humburgerSP__search a{
+  margin: 0 auto;
+}
+
+.p-humburgerSP__search a::after{
+  content: "";
+  position: absolute;
+  background-image: url("");
+  background-size: 30px 15px;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: none;
+}
+
+.p-humburgerSP__cancel{
+  position: relative;
+  font-size: 12px;
+  text-align: left;
+  padding-left: 30px;
+  cursor: pointer;
+}
+
+.p-humburgerSP__cancel > p{
+  width: 150px;
+  border-bottom: #c3c3c3 1px solid;
+}
+
+.p-humburgerSP__cancel > p::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 12px;
+  height: 12px;
+  transform: rotate(-90deg);
+  background-image: url("../img/arrow_down.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+.p-humburgerSP__tel{
+  display: flex;
+  width: 100%;
+  margin-top: 15px;
+  padding: 10px 0;
+  border: double;
+}
+
+.p-humburgerSP__telLeft{
+  width: 50%;
+  display: flex;
+  align-items: center;
+  border-right: 1px solid black;
+}
+
+.p-humburgerSP__telLeft p{
+  position: relative;
+margin: 0 auto;
+padding-left: 30px;
+text-align: left;
+font-size: 12px;
+}
+
+.p-humburgerSP__telLeft p::before{
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/hamburger/icon_phone.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+.p-humburgerSP__telRight{
+  display: flex;
+  align-items: center;
+  width: 50%;
+  height: 60px;
+  cursor: pointer;
+}
+
+.p-humburgerSP__telRight p{
+  width: 105px;
+  height: 27px;
+  margin: 0 auto;
+  background-image: url("../img/hamburger/menu_tel.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.p-hamburgerSP__bestrate{
+  height: 110px;
+  color: black;
+  background-color: white;
+  margin-top: 15px;
+  padding: 15px 10px;
+  border: #c3c3c3 1px solid;
+}
+
+.p-hamburgerSP__bestrateTop{
+  position: relative;
+  text-align: left;
+}
+
+.p-hamburgerSP__bestrateTop::before{
+  content: '';
+  width: 29px;
+  height: 29px;
+  position: absolute;
+  left: -12px;
+  top: -17px;
+  z-index: 1;
+  border-left: #af9463 2px solid;
+  border-top: #af9463 2px solid;
+}
+
+.p-hamburgerSP__bestrateTop::after{
+  content: '';
+  width: 29px;
+  height: 29px;
+  position: absolute;
+  right: -12px;
+  top: -17px;
+  z-index: 1;
+  border-right: #af9463 2px solid;
+  border-top: #af9463 2px solid;
+}
+
+.p-hamburgerSP__bestrateCover{
+  height: 60px;
+  padding-left: 90px;
+  position: relative;
+}
+
+.p-hamburgerSP__bestrateCover::before{
+  display: block;
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 60px;
+  height: 60px;
+  background-image: url("../img/hamburger/reserve_bestrate.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.p-hamburgerSP__bestrateCover p{
+  font-size: 13px;
+  line-height: 160%;
+}
+
+.p-hamburgerSP__bestrateTitle{
+  font-size: 21px !important;
+  color: #af9463;
+}
+
+.p-hamburgerSP__bestrateBottom{
+  position: relative;
+  font-size: 14px;
+  margin-top: 8px;
+  padding-top: 10px;
+  line-height: 160%;
+}
+
+.p-hamburgerSP__bestrateBottom::before{
+  content: '';
+  width: 29px;
+  height: 29px;
+  position: absolute;
+  left: -12px;
+  bottom: -3px;
+  z-index: 1;
+  border-left: #af9463 2px solid;
+  border-bottom: #af9463 2px solid;
+}
+
+.p-hamburgerSP__bestrateBottom::after{
+  content: '';
+  width: 29px;
+  height: 29px;
+  position: absolute;
+  right: -12px;
+  bottom: -3px;
+  z-index: 1;
+  border-right: #af9463 2px solid;
+  border-bottom: #af9463 2px solid;
+}
+
+
+.p-humburgerSP__menu{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 35px;
+  list-style: none;
+}
+
+.p-humburgerSP__menu li{
+  width: 50%;
+  font-size: 12px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.p-humburgerSP__menu a{
+  border-bottom: 1px solid black;
+}
+
+
+.p-humburgerSP__sns{
+  width: 220px;
+  display: flex;
+  margin: 20px auto 0;
+  padding-bottom: 60px;
+}
+
+.p-humburgerSP__facebook{
+    margin: 0 40px;
+    width: 40px;
+    height: 40px;
+    background-image: url("../img/hamburger/facebook.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.p-humburgerSP__instagram{
+  margin: 0 40px;
+  width: 40px;
+  height: 40px;
+  background-image: url("../img/hamburger/instagram.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.close{
+  /* ハンバーガーメニュー展開時、背景を固定 */
+  height: 100%;
+  overflow: hidden;  
+}
+
+
 }

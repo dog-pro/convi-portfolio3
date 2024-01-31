@@ -7,6 +7,20 @@
     font-family: "Source Serif Pro", "游明朝", "Yu Mincho", "游明朝体", "YuMincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HiraMinProN-W3", "Noto Serif JP", "ＭＳ 明朝", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", "HG明朝E", serif;
   }
 
+  .body{
+    font-family: "Source Serif Pro", "游明朝", "Yu Mincho", "游明朝体", "YuMincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HiraMinProN-W3", "Noto Serif JP", "ＭＳ 明朝", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", "HG明朝E", serif;
+  }
+
+  /* PC用のbrタグ無効化 */
+  br{
+    display: none;
+  }
+/* SP用の改行コード */
+  .brSP::before{
+    content: "\A" ;
+    white-space: pre ;
+  }
+
   .c-link{
     position: relative;
     /* width: 380px; */
@@ -125,6 +139,33 @@
     animation: animationZoom 15s ease-in-out infinite;
   }
 
+  .p-main__scrolldown{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 60px;
+    width: 40px;
+    height: 40px;
+    background-image: url("../img/header/circle_scroll.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .p-main__scrolldown > p{
+    margin: 0 auto;
+    width: 10px;
+    height: 10px;
+    background-image: url("../img/header/arrow_down.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
   .p-header__information{
     display: none;
   }
@@ -142,7 +183,7 @@
 
   /* top */
   .p-navSP__top{
-    position: relative;
+    /* position: fixed; */
     width: 100%;
     height: 50px;
     background-color: white;
@@ -190,10 +231,31 @@
 
   .p-navSP__right{
     width: 50%;
+    color: #fff;
     background: rgba(0, 0, 0, 0.9);
     border-left: 0.5px white solid;
+    display: flex;
+    align-items: center;
+    position: relative;
   }
 
+  .p-navSP__right a{
+    margin: 0 auto;
+  }
+
+  .p-navSP__right ::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 5px;
+    background-image: url("../img/header/sp/arrow_white.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 
   /* main */
 
@@ -222,6 +284,22 @@
   .p-information__list li::after{
     content: "";
     position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 25px;
+    height: 25px;
+    color: #fff;
+    border-radius: 13px;
+    background:gray url("../img/information/sp/arrow_white.png");
+    background-size: 10px;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  .p-information__list li:hover{
+    transition: all 0.5s ease;
+    opacity: 0.5;
   }
 
   .p-information__listTop{
@@ -261,6 +339,7 @@
     aspect-ratio: 3/2;
     width: 100%;
     height: 300px;
+    cursor: pointer;
   }
 
   .p-information__banner li:hover{
@@ -291,7 +370,6 @@
   }
 
   .p-philosophy__cover{
-    width: 1080px;
     text-align: center;
     font-size: 12px;
     /* margin: 0 auto; */
@@ -319,13 +397,193 @@
   /* slick.cssに記載あり */
 
   /* dish */
+  .p-dish{
+    padding-bottom: 80px;
+  }
+
   .p-dish__img{
     background-image: url("../img/dish/dish_img.jpg");
   }
 
+  .p-dish__contents{
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+
+  .p-dish__left{
+    position: relative;
+    /* width: 600px; */
+    margin: 0 auto;
+  }
+
+  .arrow-prev{
+    position: absolute;
+    left: 5.5%;
+    top: 48.5%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 15px;
+    transform: rotate(90deg);
+    background-image: url("../img/arrow_down.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    z-index: 2;
+  }
+
+  .arrow-next{
+    position: absolute;
+    right: 5.5%;
+    top: 48.5%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 15px;
+    transform: rotate(-90deg);
+    background-image: url("../img/arrow_down.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    z-index: 2;
+  }
+
+  .slider__manual li img{
+    width: 100%;
+    }
+
+
+  .p-dish__contentsRight{
+    margin: 0 auto;
+    width: 430px;
+    line-height: 1.7;
+  }
+
+  .p-dish__contentsRight h3{
+    padding: 30px 22px 40px;
+    font-size: 24px;
+    line-height: 1.8;
+  }
+
+  .p-dish__contentsRight > p{
+    margin: 0 22px 40px;
+    font-size: 14px;
+    line-height: 1.8;
+  }
+
+  .p-dish__list{
+    position: relative;
+    padding: 40px 10px 0;
+    margin: 0 auto;
+    list-style: none;    
+  }
+
+  .p-dish__list li{
+    position: relative;
+    width: 100%;
+    height: 110px;
+    margin-bottom: 2px;
+    cursor: pointer;
+  }
+
+  .p-dish__listImg{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+  }
+
+  .dinner{
+    background-image: url("../img/dish/dinner.jpg");
+  }
+
+  .breakfirst{
+    background-image: url("../img/dish/breakfast.jpg");
+  }
+
+  .adddish{
+    background-image: url("../img/dish/additional.jpg");
+  }
+
+  .p-dish__circle{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 65px;
+    height: 65px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  .p-dish__title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 12px;
+    color: black;
+    z-index: 2;
+  }
+
   /* room */
+  .p-room{
+    padding-bottom: 80px;
+  }
   .p-room__img{
     background-image: url("../img/room/room_img.jpg");
+  }
+
+  .p-room__list{
+    margin: 0 auto;
+    list-style: none;    
+    text-align: center;
+  }
+
+  .p-room__list li{
+    position: relative;
+    width: 100%;
+    height: 12em;
+    margin: 2px 10px;
+    background-color: black;
+  }
+
+  .p-room__listImg{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+  }
+
+  .p-room__listTitle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 225px;
+    height: 42px;
+    font-size: 16px;
+    color: #fff;
+  }
+
+  .p-room__capacity , .p-room__detail , 
+  .p-room__search{
+    display: none;
+  }
+
+  .p-room__listTitle p , .p-room__detail > a ,
+  .p-room__capacity > a , .p-room__search > a{
+    margin: 0 auto;
+  }
+
+  .special{
+    background-image: url("../img/room/special_room.jpg");
+  }
+  .western{
+    background-image: url("../img/room/western_style.jpg");
+  }
+  .japanese{
+    background-image: url("../img/room/japanese_style.jpg");
   }
 
   /* bath */
@@ -407,6 +665,7 @@
     position: relative;
     /* width: 1080px; */
     margin: 104px auto 0;
+    padding: 0 10px;
   }
 
   .p-bathList__cover{
@@ -432,7 +691,7 @@
     transform: translateY(-50%) rotate(-90deg);
     width: 10px;
     height: 10px;
-    background-image: url("../img/arrow_down.png");
+    background:gray url("../img/arrow_down.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -507,6 +766,7 @@
   .p-bathCommit__left p{
     font-size: 14px;
     margin-bottom: 30px;
+    text-align: left;
   }
 
   .p-bathCommit__right{
@@ -515,6 +775,48 @@
     margin: 2px 0;
     padding: 0 10px;
   }
+
+    /* about */
+    .p-bathAbout__top{
+      /* display: flex; */
+    }
+  
+    .p-bathAbout__bottom{
+      /* display: flex; */
+      margin-top: 45px;
+    }
+  
+    .p-bathAbout__title{
+      align-items: center;
+    }
+  
+    .p-bathAbout__title p{
+      width: 230px;
+      border-left: double;
+      font-size: 18px;
+      padding-left: 28px;
+      margin-right: 30px;
+      line-height: 50px;
+    }
+  
+    .p-bathAbout__right{
+      /* width: 800px; */
+      list-style: none;
+    }
+  
+    .p-bathAbout__right li{
+      font-size: 14px;
+      padding: 20px 0 18px;
+      display: flex;
+      border-bottom: #c3c3c3 1px solid;
+      line-height: 180%;
+    }
+  
+    .p-bathAbout__right h4{
+      width: 160px;
+    }
+  
+    .p-bathAbout__right p{}
 
   /* guide */
   .p-guide{
