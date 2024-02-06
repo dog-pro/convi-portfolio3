@@ -181,6 +181,10 @@
     z-index: 1;
   }
 
+  .p-nav__menu{
+    display: none;
+  }
+
   /* top */
   .p-navSP__top{
     /* position: fixed; */

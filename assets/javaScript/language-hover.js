@@ -33,16 +33,6 @@
 //   });
 // });
 
-$(function() {
-  $(".p-language__top").hover(
-    function() { //ホバーしたとき
-      $(".p-language__cover").addClass(".open");
-    },function() {　//ホバーを外したとき
-      $(".p-language__cover").removeClass(".open");
-    }
-  );
-});
-
 // $(function() {
 //   $(".p-language__top").hover(
 //     function() {
@@ -51,4 +41,33 @@ $(function() {
 //   );
 // });
 
+// -------------------------------------------------------------
 
+// $(function() {
+//   $(".p-language__top").hover(
+//     function() { //ホバーしたとき
+//       $(".p-language__cover").addClass(".open");
+//     },function() {　//ホバーを外したとき
+//       $(".p-language__cover").removeClass(".open");
+//     }
+//   );
+// });
+// -------------------------------------------------------------
+
+// toggle
+$(() => {
+  $(".p-menu__item").hover(function(){
+    $(this).children(".p-menu__toggle").stop().slideToggle();
+  });
+});
+
+// ハンバーガーメニュー
+$(".l-header__spmenu-trigger, .l-sidemenu__closebtn, .l-sidemenu__closeBottom").on('click',() => {
+  let trg = $(".l-header__spmenu-trigger");
+  if(!$(".l-sidemenu").is(':animated')){
+      trg.toggleClass('active');
+      $('html').toggleClass('open');
+      $('.l-sidemenu__back').toggleClass('open');
+  }
+  return false;
+});

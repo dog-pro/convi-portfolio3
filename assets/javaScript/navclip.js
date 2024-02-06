@@ -49,6 +49,7 @@
 // });
 
 
+//YouTube　きど「【jQuery】スクロールしたら要素がふわっと表示されるアニメーションの作り方！」参照
 $(function () {
   $(window).scroll(function(){
     $('.fadein').each(function(){ 
