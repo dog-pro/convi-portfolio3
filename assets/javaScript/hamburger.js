@@ -5,6 +5,33 @@ $(function(){
   });
 });
 
+// $(function(){
+//   $('.c-humburger__button').click(function(){
+//     $('.p-hamburgerPC').toggleClass('add');
+//     setTimeout(function() {
+//       $('.p-hamburgerPC').removeClass('add');
+//     }, 600); 
+//     // .add クラスのアニメーション時間に合わせて待機する
+//   });
+// });
+
+
+
+//　　　　　両方　　.c-humburger__button
+// 空室確認ボタン　.p-vacant
+// 　　　　　　　×　.p-hamburgerPC__close
+
+// ハンバーガーメニュー
+// $(".c-humburger__button, p-hamburgerPC__close").on('click',() => {
+//   let trg = $(".c-humburger__button");
+//   if(!$(".p-hamburgerPC").is(':animated')){
+//       trg.toggleClass('add');
+//       $('.l-sidemenu__back').toggleClass('open');
+//   }
+//   return false;
+// });
+
+
 // ハンバーガー内　kids
 $(function(){
   $('.slide').click(function(){

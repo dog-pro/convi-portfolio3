@@ -377,4 +377,63 @@
     background-repeat: no-repeat;
   }
 
+
+
+  .p-footer__fixed{
+    display: flex;
+    width: 100%;
+    height: 50px;
+
+    /* 画面下部で固定 */
+    position: fixed;
+    bottom: 0;
+  }
+
+  .p-footer__fixedLeft{
+    width: 50%;
+    background: rgba(0, 0, 0, 0.9);
+    border-right: 0.5px white solid;
+    display: flex;
+  }
+
+  .p-footer__fixedLeft p{
+    margin: 0 auto;
+  }
+
+  .p-footer__fixedImg{
+    width: 105px;
+    height: 50px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: contain;
+  }
+
+  .p-footer__fixedRight{
+    width: 50%;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.9);
+    border-left: 0.5px white solid;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+  .p-footer__fixedRight a{
+    margin: 0 auto;
+  }
+
+  .p-footer__fixedRight ::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 5px;
+    background-image: url("../img/header/sp/arrow_white.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }

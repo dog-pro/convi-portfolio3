@@ -2,7 +2,8 @@
 @media screen and (min-width: 769px){
   .p-hamburgerPC{
     /* display: none; */
-    position: absolute;
+    /* position: absolute; */
+    position: fixed;/*画面右に固定*/
     right: -450px;
     /* transform: scaleX(0); */
     top: 0;
@@ -93,6 +94,7 @@
   .p-hamburgerPC__kids{
     position: relative;
     text-align: center;
+    cursor: pointer;
   }
 
   .p-hamburgerPC__kids::after{
@@ -401,6 +403,10 @@
     position: absolute;
     right: -450px;
     transition:all .6s;
+  }
+
+  .open{
+
   }
 
 }
