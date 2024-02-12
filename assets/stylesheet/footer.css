@@ -238,7 +238,8 @@
   }
   
   .p-footer__right{
-    width: 620px;
+    /* width: 620px; */
+    width: 100%;
   }
 
   .p-footer__rightTop{
@@ -380,7 +381,8 @@
 
 
   .p-footer__fixed{
-    display: flex;
+    /* display: flex; */
+    display: none;
     width: 100%;
     height: 50px;
 

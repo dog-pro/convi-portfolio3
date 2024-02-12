@@ -20,7 +20,8 @@ translateY(30px);にしている理由は、下記の.activeが付与された�
 .fadein{
   /* display: none; */
   /* transform: translate(0,80px); */
-  transition: all 800ms; 
+  top:0px;
+  /* transition: all 800ms;  */
 }
 
 .scrollin{

@@ -51,21 +51,44 @@
 
 //YouTube　きど「【jQuery】スクロールしたら要素がふわっと表示されるアニメーションの作り方！」参照
 
-$(function () {
-  $(window).scroll(function(){
-    $('.fadein').each(function(){ 
-      // ('.fadein')クラスと書かれた場所に対して.eachそれぞれに実行
-      let targetElement = $(this).offset().top;
-      // .offset クラスの位置を取得
-      // .top    クラスの一番上を取得
-      let scroll = $(window).scrollTop();
-      // .scrollTop スクロール量を取得
-      let windowHeight = $(window).height();
-      // .height ウィンドウの高さを取得
-      if(scroll > targetElement - windowHeight + 150){
-        // +150 要素がほんの少しでも見えた瞬間に発火してしまうと早すぎるので+150している
-        $(this).addClass('scrollin');
-      }
-    })
-  })
+// $(function () {
+//   $(window).scroll(function(){
+//     $('.fadein').each(function(){ 
+//       // ('.fadein')クラスと書かれた場所に対して.eachそれぞれに実行
+//       let targetElement = $(this).offset().top;
+//       // .offset クラスの位置を取得
+//       // .top    クラスの一番上を取得
+//       let scroll = $(window).scrollTop();
+//       // .scrollTop スクロール量を取得
+//       let windowHeight = $(window).height();
+//       // .height ウィンドウの高さを取得
+//       if(scroll > targetElement - windowHeight + 150){
+//         // +150 要素がほんの少しでも見えた瞬間に発火してしまうと早すぎるので+150している
+//         $(this).addClass('scrollin');
+//       }
+//     })
+//   })
+// });
+
+//下記参照
+//https://newsite-make.com/scroll-header-fadein/
+$(function(){
+  const header = $(".p-navSP__top");
+  $(window).on("scroll",function(){
+    let scroll = $(window).scrollTop();
+    //.scrollTop スクロール量を取得
+    let windowHeight = $(window).height();
+    // .height ウィンドウの高さを取得
+    let targetElement = $(".p-information").offset().top;
+       // .offset クラスの位置を取得
+       // .top    クラスの一番上を取得
+       var targets = (".p-information");
+
+
+    if(scroll > targetElement - windowHeight + 150){
+      header.addClass("fadein");
+    }else{
+      header.removeClass("fadein");
+    }
+  });
 });
