@@ -75,14 +75,18 @@
 $(function(){
   const header = $(".p-navSP__top");
   $(window).on("scroll",function(){
-    let scroll = $(window).scrollTop();
-    //.scrollTop スクロール量を取得
-    let windowHeight = $(window).height();
-    // .height ウィンドウの高さを取得
+
+      //ターゲットの一番上の位置を取得
     let targetElement = $(".p-information").offset().top;
-       // .offset クラスの位置を取得
-       // .top    クラスの一番上を取得
-       var targets = (".p-information");
+      // .offset クラスの位置を取得
+      // .top    クラスの一番上を取得
+  
+      //.scrollTop スクロール量を取得
+    let scroll = $(window).scrollTop();
+      // .height ウィンドウの高さを取得
+    let windowHeight = $(window).height();
+      // -40はpadding分
+    // let minusPadding = scroll + height - 40;
 
 
     if(scroll > targetElement - windowHeight + 150){

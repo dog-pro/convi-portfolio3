@@ -133,7 +133,8 @@
   .p-mainPhoto img{
     width: 100%;
     /* height: 919px; */
-    height: 969px;
+    /* height: 969px; */
+    height: 93vh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
