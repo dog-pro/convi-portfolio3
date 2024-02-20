@@ -73,26 +73,46 @@
 //下記参照
 //https://newsite-make.com/scroll-header-fadein/
 $(function(){
-  const header = $(".p-navSP__top");
-  $(window).on("scroll",function(){
 
-      //ターゲットの一番上の位置を取得
-    let targetElement = $(".p-information").offset().top;
+  $(window).on("scroll",function(){
+    // SP
+    const header = $(".p-navSP__top");
+    const bottom = $(".p-footer__fixed");
+
+    // PC
+    const navTop = $(".p-navTop__cover");
+    const navBottom = $(".p-nav__bottom");
+
+    //ターゲットの位置を取得
+    let targetTop = $(".p-information").offset().top;
       // .offset クラスの位置を取得
       // .top    クラスの一番上を取得
-  
-      //.scrollTop スクロール量を取得
+
     let scroll = $(window).scrollTop();
-      // .height ウィンドウの高さを取得
+    //.scrollTop スクロール量を取得
     let windowHeight = $(window).height();
-      // -40はpadding分
+    // .height ウィンドウの高さを取得
+    
+    // -40はpadding分
     // let minusPadding = scroll + height - 40;
+    // let height = scroll + windowHeight - 96
 
+    if(scroll > targetTop - windowHeight + 800){
+      // SP
+      header.addClass("fadeinTop");
+      bottom.addClass('fadeinFooter');
+      // PC
+      navTop.addClass("fadeinTop__pc");
+      navBottom.addClass("fadeinBottom__pc");
 
-    if(scroll > targetElement - windowHeight + 150){
-      header.addClass("fadein");
     }else{
-      header.removeClass("fadein");
+      // SP
+      header.removeClass("fadeinTop");
+      bottom.removeClass('fadeinFooter');
+      // PC
+      navTop.removeClass("fadeinTop__pc");
+      navBottom.removeClass("fadeinBottom__pc");
+
     }
   });
 });

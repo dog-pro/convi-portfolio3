@@ -115,10 +115,10 @@
   .p-navTop{
     width: 100%;
     background-color: white;
-    display: none;
+    /* display: none; */
     position: relative;
     z-index: 5;
-    top: -136px;
+    /* top: -136px; */
   }
 
   .p-navTop__cover{
@@ -126,9 +126,13 @@
     height: 80px;
     display: flex;
     position: relative;
+    position: fixed;
+    top: -136px;
+
     z-index:1;
     color: black;
     align-items: center;
+    background-color: white;
     justify-content: space-between;
   }
 
@@ -176,6 +180,17 @@
   }
 
   .p-nav__bottom{
+    position: relative;
+    position: fixed;
+    top: -80px;
+
+    height: 56px;
+    background-color: black;
+    text-align: right;
+    align-items: center;
+  }
+
+  .p-nav__fixed{
     position: relative;
     height: 56px;
     background-color: black;

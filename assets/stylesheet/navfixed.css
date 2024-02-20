@@ -16,13 +16,26 @@ translateY(30px);にしている理由は、下記の.activeが付与された�
   visibility: visible;
   transform: translateY(0);
 }
-
-.fadein{
-  /* display: none; */
-  /* transform: translate(0,80px); */
+/* SP */
+.fadeinTop{
   top:0px;
-  /* transition: all 800ms;  */
 }
+
+.fadeinFooter{
+  bottom: 0;
+  position: fixed;
+  /* transition-duration: 1s; */
+}
+
+/* PC */
+.fadeinTop__pc{
+  top:0px;
+}
+
+.fadeinBottom__pc{
+  top: 81px;
+}
+
 
 .scrollin{
   display: block;
