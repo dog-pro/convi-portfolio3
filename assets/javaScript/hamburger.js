@@ -55,6 +55,9 @@ $(function(){
 // SP ハンバーガーメニュー開閉
 $(function(){
   $('.p-humburgerSPbutton').click(function(){
+    // hambueger開いているとき背景固定
+    // bodyにmodal-openクラスをトグル
+    $('body').toggleClass('modal-open'); 
     $('.p-humburgerSP').slideToggle(".close" , 0);
   });
 });

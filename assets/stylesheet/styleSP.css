@@ -9,7 +9,11 @@
 
   .body{
     font-family: "Source Serif Pro", "游明朝", "Yu Mincho", "游明朝体", "YuMincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HiraMinProN-W3", "Noto Serif JP", "ＭＳ 明朝", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", "HG明朝E", serif;
-    overflow-x: hidden;
+  }
+
+  /* hambueger開いているとき背景固定 */
+  body.modal-open{
+    overflow: hidden;
   }
 
   /* PC用のbrタグ無効化 */
@@ -24,12 +28,10 @@
 
   .c-link{
     position: relative;
-    /* width: 380px; */
     border: double ;
     font-size: 13px;
     padding: 10px 0;
-    margin: 40px 2%;
-    /* margin: 40px auto; */
+    margin: 40px 4%;
     display: flex;
     align-items: center;
   }
@@ -132,8 +134,6 @@
   /* header */
   .p-mainPhoto img{
     width: 100%;
-    /* height: 919px; */
-    /* height: 969px; */
     height: 93vh;
     background-size: cover;
     background-position: center;
@@ -141,6 +141,8 @@
     overflow: hidden;
     transform: scale(1.4);
     animation: animationZoom 15s ease-in-out infinite;
+
+    object-fit: cover;
   }
 
   .p-main__scrolldown{
@@ -332,13 +334,10 @@
 
   .p-information__date{
     color: #838383;
-    /* font-size: 13px; */
     width: 100px;
   }
 
   .p-information__tag{
-    /* display: inline-block; */
-    
     color: #fff;
     text-align: center;
     letter-spacing: normal;
@@ -353,43 +352,50 @@
   }
 
   .p-information__banner li{
-    margin-top: 15px;
+    cursor: pointer; 
+    position: relative;
+    width: 100%;
+    height: 27vh;
+    margin: 2px 0;
+    background-color: black;
+  }
+
+  .p-information__bannerList{
+
+  }
+
+  .p-information__bannerList img{
+    width: 100%;
+    height: 27vh;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    aspect-ratio: 3/2;
-    width: 100%;
-    /* height: 300px; */
-    height: 27vh;
+    opacity: 0.5;
 
-    display: flex;
-    align-items: center;
-    font: 25px bold black;
-
-    cursor: pointer;
+    object-fit: cover;
   }
 
-  .p-information__banner a{
-    background: none !important;
-    margin: 0 auto;
+  .hotel{
+    /* background-image: url("../img/information/inclusive.jpg"); */
   }
 
-  .p-information__banner li:hover{
-    transition: all 0.5s ease;
-    opacity: 0.7;
+  .onlineshop{
+    /* background-image: url("../img/information/online_shop.jpg"); */
   }
 
-  .p-information__banner :nth-child(1){
-    background-image: url("../img/information/inclusive.jpg");
+  .bar{
+    /* background-image: url("../img/information/sakebar.jpg"); */
   }
 
-  .p-information__banner :nth-child(2){
-    background-image: url("../img/information/online_shop.jpg");
-  }
+  .p-information__bannerTitle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 19px;
+    color: #fff;
 
-  .p-information__banner :nth-child(3){
-    background-image: url("../img/information/sakebar.jpg");
-    margin-bottom: 15px;
+    text-align: center;
   }
 
   /* Philosophy */
@@ -537,7 +543,8 @@
 
   .p-dish__circle{
     position: absolute;
-    top: 30%;
+    /* top: 30%; */
+    top: 25%;
     left: 50%;
     transform: translateX(-50%);
     width: 65px;
@@ -634,18 +641,15 @@
   .p-bath__select{
     list-style: none;
     margin: 0 auto;
-    padding: 0 10px;
+    /* padding: 0 10px; */
   }
 
   .p-bath__select li{
     position: relative;
-    width: 100%;
-    height: 20px;
     border: double;
-    font-size: 16px;
+    font-size: 13px;
     padding: 10px 0;
-    /* margin:0 18px 10px 0; */
-    margin: 0 0 10px;
+    margin: 0 4% 10px;
     display: flex;
     align-items: center;
   }
@@ -706,7 +710,7 @@
     position: relative;
     /* width: 1080px; */
     margin: 104px auto 0;
-    padding: 0 10px;
+    /* padding: 0 10px; */
   }
 
   .p-bathList__cover{
@@ -714,13 +718,14 @@
     list-style: none;
     font-size: 16px;
     color: white;
-    padding: 0 10px;
+    margin:0 20px;
   }
 
   .p-bathList__cover li{
     position: relative;
     width: 100%;
-    margin: 0 2px;
+    height: 140px;
+    margin: 10px 0;
     cursor: pointer;
     background-color: black;
   }
@@ -753,7 +758,7 @@
     background-repeat: no-repeat;
   }
 
-  .p-bathList__img{
+  .p-bathList__img img{
     width: 100%;
     height: 140px;
     margin-bottom: 10px;
@@ -761,6 +766,8 @@
     background-position: center center;
     background-repeat: no-repeat;
     opacity: 0.3;
+
+    object-fit: cover;
   }
 
   .p-bathList__hover{
@@ -775,13 +782,13 @@
   }
 
   .openbath{
-    background-image: url("../img/bath/openbath.jpg");
+    /* background-image: url("../img/bath/openbath.jpg"); */
   }
   .bigbath{
-    background-image: url("../img/bath/big_bathroom.jpg");
+    /* background-image: url("../img/bath/big_bathroom.jpg"); */
   }
   .hinokibath{
-    background-image: url("../img/bath/hinoki_bath.jpg");
+    /* background-image: url("../img/bath/hinoki_bath.jpg"); */
   } 
 
   .is-hidden{
@@ -871,6 +878,7 @@
   .p-guide__contents{
     display: flex;
     margin: 0 auto;
+    padding: 0 10px;
   }
 
   .p-guide__list{

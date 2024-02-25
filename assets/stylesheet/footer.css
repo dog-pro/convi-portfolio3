@@ -175,7 +175,7 @@
   }
 
   .p-footer__top{
-    padding:0 20px;
+    padding:0 4%;
     margin: 0 auto;
   }
 
@@ -250,6 +250,7 @@
     position: relative;
     display: flex;
     padding-left: 30px;
+    margin-bottom: 20px;
     font-size: 12px;
     line-height: 27px;
   }
@@ -275,6 +276,7 @@
   .p-footer__number{
     border-bottom: 0.5px black solid;
     line-height: 1.5;
+    width: 75px;
   }
 
   .p-footer__number::before{
@@ -326,17 +328,18 @@
 
   .p-vacantSP{
     position: relative;
-    width: 100%;
-    height: 35px;
-
+    border: #c8c8c8 1px solid;
+    /* width: 100%; */
+    /* height: 35px; */
+    font-size: 13px;
+    padding: 10px 0;
     margin: 40px 0;
-
     display: flex;
     align-items: center;
+
     color: black;
     background-color: white;
     cursor: pointer;
-    border: #c8c8c8 1px solid;
   }
 
   .p-vacantSP p{
