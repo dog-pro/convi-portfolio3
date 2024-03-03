@@ -125,11 +125,35 @@
     transform: translateX(-50%);
     width: 165px;
     height: 170px;
-    background-image: url("../img/header/main_logo.svg");
+    text-align: center;
+    /* background-image: url("../img/header/main_logo.svg"); */
+    /* background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */
+  }
+
+  .p-main__logoname{
+    width: 100%;
+    margin-bottom: 30px;
+    font-size: 13px;
+    color: white;
+
+    font-family: "Source Serif Pro", 游明朝, "Yu Mincho", 游明朝体, YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", HiraMinProN-W3, "Noto Serif JP", "ＭＳ 明朝", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", HG明朝E, serif;
+  }
+
+  .p-main__logonameBig{
+    margin-left: 10px;
+    font-size: 17px;
+  }
+
+  .p-main__logo img{
+    width: 100%;
+    height: auto;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
   }
+
   
   /* header */
   .p-mainPhoto img{
@@ -146,7 +170,8 @@
   }
 
   .p-main__scrolldown{
-    position: absolute;
+    display: none;
+    /* position: absolute;
     left: 50%;
     transform: translateX(-50%);
     bottom: 60px;
@@ -159,7 +184,7 @@
 
     display: flex;
     align-items: center;
-    cursor: pointer;
+    cursor: pointer; */
   }
 
   .p-main__scrolldown > p{
@@ -182,7 +207,6 @@
   }
 
   .p-navSP{
-    /* position: fixed; */
     width: 100%;
     z-index: 1;
   }
@@ -405,6 +429,10 @@
 
   .p-philosophy__img{
     background-image: url("../img/philosophy/philosophy_img.jpg");
+    width: 100%;
+    background-size: cover;
+    background-position: center 20%;
+    background-repeat: no-repeat;
   }
 
   .p-philosophy__cover{
@@ -570,6 +598,10 @@
   }
   .p-room__img{
     background-image: url("../img/room/room_img.jpg");
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
   }
 
   .p-room__list{

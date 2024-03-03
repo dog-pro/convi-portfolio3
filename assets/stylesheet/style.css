@@ -138,25 +138,32 @@
 
   .p-navTop__title{
     margin-left: 110px;
-    font-size: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+
+    display: flex;
+    align-items: center;
   }
 
   .p-navTop__title::before{
     content: "";
     position: absolute;
     left: 25px;
-    top: 0;
+    top: 10px;
     background-image: url("../img/header/header_logo.svg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    width: 60px;
-    height: 60px;
+    /* width: 60px; */
+    /* height: 60px; */
+    width: 50px;
+    height: 45px;
     margin-top: 10px;
   }
 
   .p-navTop__title > span{
-    font-size: 30px;
+    font-size: 27px;
     margin-left: 10px;
   }
 
@@ -291,7 +298,31 @@
     transform: translateX(-50%);
     width: 240px;
     height: 250px;
-    background-image: url("../img/header/main_logo.svg");
+    text-align: center;
+    letter-spacing: 0.2em;
+    /* background-image: url("../img/header/main_logo.svg"); */
+    /* background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */
+  }
+
+  .p-main__logoname{
+    width: 100%;
+    margin-bottom: 50px;
+    font-size: 17px;
+    color: white;
+
+    font-family: "Source Serif Pro", 游明朝, "Yu Mincho", 游明朝体, YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", HiraMinProN-W3, "Noto Serif JP", "ＭＳ 明朝", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", HG明朝E, serif;
+  }
+
+  .p-main__logonameBig{
+    margin-left: 10px;
+    font-size: 25px;
+  }
+
+  .p-main__logo img{
+    width: 100%;
+    height: auto;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -305,7 +336,8 @@
   }
   
   .p-main__scrolldown{
-    position: absolute;
+    display: none;
+    /* position: absolute;
     left: 50%;
     transform: translateX(-50%);
     bottom: 60px;
@@ -317,15 +349,16 @@
     background-repeat: no-repeat;
 
     display: flex;
-    align-items: center;
+    align-items: center; */
 
-    animation: updown 5s infinite;/* アニメーション名の指定 */
-    animation-duration: 3s;
+    /* アニメーション名の指定 */
+    /* animation: updown 5s infinite; */
     /* アニメーション動作時間の指定 */
-    animation-timing-function: ease;
+    /* animation-duration: 3s; */
     /* アニメーションの動き指定（徐々に早く）*/
+    /* animation-timing-function: ease; */
 
-    cursor: pointer;
+    /* cursor: pointer; */
   }
 
   .p-main__scrolldown > p{
@@ -589,6 +622,10 @@
 
   .p-philosophy__img{
     background-image: url("../img/philosophy/philosophy_img.jpg");
+    width: 100%;
+    background-size: cover;
+    background-position: center 20%;
+    background-repeat: no-repeat;
   }
 
   .p-philosophy__cover{
@@ -1004,7 +1041,7 @@
   .c-arrow__about{
     position: absolute;
     top: -15%;
-    right: 15%;
+    right: 18%;
     width: 10px;
     height: 10px;
     background-image: url("../img/arrow_down.png");
@@ -1029,23 +1066,36 @@
 
   .p-bathList__cover li{
     position: relative;
-    width: 32.5%;
-    height: max-content;
+    /* width: 32.5%; */
+    width: 33%;
+    /* height: max-content; */
+    height: 100%;
     margin: 0 2px;
     cursor: pointer;
     background-color: black;
   }
 
-  .p-bathList__img img{
+  .p-bathList__openbathImg{
     width: 100%;
     height: 100%;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+    object-fit: cover;
+    object-position: 30% center;
   }
 
-  
+  .p-bathList__bigbathImg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 85% center;
+  }
 
+  .p-bathList__hinokibathImg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 30% center;
+  }
+  
   .p-bathList__cover li:hover .p-bathList__img{
     opacity: 0.6;
     transition: 0.6s ease;
@@ -1082,15 +1132,16 @@
     transform: translateX(-50%);
   }
 
-  .openbath{
-    background-image: url("../img/bath/openbath.jpg");
+  .p-bathList__cover li:hover .p-bathList__title{
+    display: none;
   }
-  .bigbath{
-    background-image: url("../img/bath/big_bathroom.jpg");
+
+  .openbath,.bigbath,.hinokibath{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* object-position: 30% center; */
   }
-  .hinokibath{
-    background-image: url("../img/bath/hinoki_bath.jpg");
-  } 
 
   .is-hidden{
     transition: .6s;
