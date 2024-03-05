@@ -1,18 +1,15 @@
 /* PC style */
 @media screen and (min-width: 769px){
   .p-hamburgerPC{
-    /* display: none; */
-    /* position: absolute; */
     position: fixed;/*画面右に固定*/
     right: -450px;
-    /* transform: scaleX(0); */
     top: 0;
     width: 350px;
-    height: 100vh;
+    height: 78.5vh;
     padding: 100px 50px;
     background: rgba(0, 0, 0, 0.9);
     z-index: 2;
-    overflow-y: auto;
+    /* overflow-y: auto; */
     font-family: "Source Serif Pro", "游明朝", "Yu Mincho", "游明朝体", "YuMincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HiraMinProN-W3", "Noto Serif JP", "ＭＳ 明朝", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", "HG明朝E", serif;
   }
 
@@ -290,20 +287,19 @@
 
   .p-hamburgerPC__openhour{}
 
-  .p-hamburgerPC__bestrate{
+  /* .p-hamburgerPC__bestrate{
     height: 165px;
     color: black;
     background-color: white;
     padding: 20px 15px;
-  }
+  } */
 
-  .p-hamburgerPC__bestrateTop{
+  /* .p-hamburgerPC__bestrateTop{
     position: relative;
-    /* height: 100px; */
     border-bottom: 1px black solid;
-  }
+  } */
 
-  .p-hamburgerPC__bestrateTop::before{
+  /* .p-hamburgerPC__bestrateTop::before{
     content: '';
     width: 29px;
     height: 29px;
@@ -388,7 +384,7 @@
     z-index: 1;
     border-right: #af9463 2px solid;
     border-bottom: #af9463 2px solid;
-  }
+  } */
 
   /* after click event */
 
@@ -397,6 +393,7 @@
     right: 0;
     transition:all .6s;
     overflow-y: scroll;
+    z-index: 6;
   }
   
   .close{
@@ -404,11 +401,6 @@
     right: -450px;
     transition:all .6s;
   }
-
-  .open{
-
-  }
-
 }
 
 
@@ -472,33 +464,35 @@
   display: none;
   position: fixed;
   top: 50px;
-  /* width: 100%; */
-  width: 95%;
-  z-index: 6;
 
-  height: 100%;
-  padding:70px 15px 0;
+  width: 100%;
+  height: 93%;
+  z-index: 4;
+
+  /* padding: 20px 15px 0; */
+  padding-top: 20px;
   margin: 0 auto;
   text-align: center;
   background-color: rgba(255, 255, 255, 0.95);
   overflow-y: scroll;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
   font-family: "Source Serif Pro", "游明朝", "Yu Mincho", "游明朝体", "YuMincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HiraMinProN-W3", "Noto Serif JP", "ＭＳ 明朝", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", "HG明朝E", serif;
 }
 
 .p-humburgerSP__language{
-  max-width: 760px;
+  width: 97%;
   display: flex;
+  margin: 0 auto;
   flex-wrap: wrap;
   list-style: none;
 }
 
 .p-humburgerSP__language li{
-  width: 31%;
+  width: 30.7%;
   height: 30px;
   display: flex;
   align-items: center;
-  margin: 0 5px 10px;
+  margin: 0 1% 10px;
   border: #c3c3c3 1px solid;
   cursor:pointer;
 }
@@ -508,7 +502,8 @@
 }
 
 .p-humburgerSP__nav{
-  margin-top: 15px;
+  width: 93%;
+  margin: 15px auto;
   text-align: center;
   list-style: none;
   line-height: 2;
@@ -526,9 +521,9 @@
 }
 
 .p-humburgerSP__search{
+  width: 93%;
   list-style: none;
-  margin-top: 15px;
-
+  margin: 15px auto;
 }
 
 .p-humburgerSP__search li{
@@ -555,10 +550,12 @@
 }
 
 .p-humburgerSP__cancel{
+  width: 93%;
   position: relative;
   font-size: 12px;
   text-align: left;
-  padding-left: 30px;
+  padding-left: 6%;
+  margin: 0 auto;
   cursor: pointer;
 }
 
@@ -571,7 +568,8 @@
   content: "";
   position: absolute;
   top: 0;
-  left: 0;
+  /* left: 0; */
+  left: 3%;
   width: 12px;
   height: 12px;
   transform: rotate(-90deg);
@@ -585,8 +583,8 @@
 .p-humburgerSP__tel{
   display: flex;
   /* width: 100%; */
-  width: 99%;
-  margin-top: 15px;
+  width: 93%;
+  margin: 15px auto;
   padding: 10px 0;
   border: double;
 }
@@ -640,10 +638,11 @@ font-size: 12px;
 }
 
 .p-hamburgerSP__bestrate{
+  width: 87%;
   height: 110px;
   color: black;
   background-color: white;
-  margin-top: 15px;
+  margin: 15px auto;
   padding: 15px 10px;
   border: #c3c3c3 1px solid;
 }
@@ -740,11 +739,11 @@ font-size: 12px;
   border-bottom: #af9463 2px solid;
 }
 
-
 .p-humburgerSP__menu{
+  width: 93%;
   display: flex;
   flex-wrap: wrap;
-  margin-top: 35px;
+  margin: 35px auto 0;
   list-style: none;
 }
 
@@ -779,7 +778,7 @@ font-size: 12px;
 }
 
 .p-humburgerSP__instagram{
-  margin: 0 40px;
+  margin: 0 30px;
   width: 40px;
   height: 40px;
   background-image: url("../img/hamburger/instagram.svg");
