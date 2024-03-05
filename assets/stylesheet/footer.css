@@ -258,6 +258,8 @@
   .p-footer__address{
     border-bottom: 0.5px black solid;
     line-height: 1.5;
+    font-size: 15px;
+    width: 270px;
     margin-bottom: 15px;
   }
 
@@ -276,7 +278,8 @@
   .p-footer__number{
     border-bottom: 0.5px black solid;
     line-height: 1.5;
-    width: 75px;
+    font-size: 15px;
+    width: 100px;
   }
 
   .p-footer__number::before{
