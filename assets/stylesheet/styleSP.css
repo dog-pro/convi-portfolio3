@@ -49,7 +49,6 @@
 
   .c-link__arrow{
     position: absolute;
-    /* left: 60px; */
     right: 30px;
     width: 10px;
     height: 10px;
@@ -71,7 +70,6 @@
   .c-link:hover .c-link__arrowWhite{
     display: block;
     position: absolute;
-    /* left: 60px; */
     right: 30px;
     width: 10px;
     height: 10px;
@@ -96,7 +94,6 @@
   }
 
   h2{
-    /* margin: 0 auto; */
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -130,10 +127,6 @@
     width: 165px;
     height: 170px;
     text-align: center;
-    /* background-image: url("../img/header/main_logo.svg"); */
-    /* background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat; */
   }
 
   .p-main__logoname{
@@ -173,24 +166,6 @@
     object-fit: cover;
   }
 
-  .p-main__scrolldown{
-    display: none;
-    /* position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 60px;
-    width: 40px;
-    height: 40px;
-    background-image: url("../img/header/circle_scroll.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    display: flex;
-    align-items: center;
-    cursor: pointer; */
-  }
-
   .p-main__scrolldown > p{
     margin: 0 auto;
     width: 10px;
@@ -224,16 +199,13 @@
   .p-navSP__top{
     /* 要素の表示非表示 */
     display: flex;
-
     position: fixed;
     top: -50px;
     transition-duration:1s;
-
     width: 100%;
     height: 50px;
     background-color: white;
     align-items: center;
-
     border-bottom: #e6e6e6 1px solid;
     z-index: 5;
   }
@@ -305,8 +277,6 @@
   }
 
   /* main */
-
-
 
   /* information */
   .p-information{
@@ -390,10 +360,6 @@
     background-color: black;
   }
 
-  .p-information__bannerList{
-
-  }
-
   .p-information__bannerList img{
     width: 100%;
     height: 27vh;
@@ -401,20 +367,7 @@
     background-position: center center;
     background-repeat: no-repeat;
     opacity: 0.5;
-
     object-fit: cover;
-  }
-
-  .hotel{
-    /* background-image: url("../img/information/inclusive.jpg"); */
-  }
-
-  .onlineshop{
-    /* background-image: url("../img/information/online_shop.jpg"); */
-  }
-
-  .bar{
-    /* background-image: url("../img/information/sakebar.jpg"); */
   }
 
   .p-information__bannerTitle{
@@ -424,7 +377,6 @@
     transform: translateX(-50%);
     font-size: 19px;
     color: #fff;
-
     text-align: center;
   }
 
@@ -446,16 +398,13 @@
   .p-philosophy__cover{
     text-align: center;
     font-size: 12px;
-    /* margin: 0 auto; */
   }
 
   .p-philosophy__contents{
-    /* display: flex; */
     align-items: center;
   }
 
   .p-philosophy__left{
-    /* width: 48%; */
     line-height: 1.7;
   }
 
@@ -492,7 +441,6 @@
 
   .p-dish__left{
     position: relative;
-    /* width: 600px; */
     margin: 0 auto;
   }
 
@@ -533,7 +481,6 @@
 
   .p-dish__contentsRight{
     margin: 0 auto;
-    /* width: 430px; */
     width: 100%;
     line-height: 1.7;
   }
@@ -585,7 +532,6 @@
 
   .p-dish__circle{
     position: absolute;
-    /* top: 30%; */
     top: 25%;
     left: 50%;
     transform: translateX(-50%);
@@ -631,7 +577,6 @@
     position: relative;
     width: 100%;
     height: 12em;
-    /* margin: 2px 10px; */
     margin: 2px 0;
     background-color: black;
   }
@@ -695,7 +640,6 @@
   .p-bath__select{
     list-style: none;
     margin: 0 auto;
-    /* padding: 0 10px; */
   }
 
   .p-bath__select li{
@@ -762,9 +706,8 @@
 
   .p-bathList{
     position: relative;
-    /* width: 1080px; */
     margin: 104px auto 0;
-    /* padding: 0 10px; */
+    padding: 0 10px;
   }
 
   .p-bathList__cover{
@@ -835,16 +778,6 @@
     transform: translateX(-50%);
   }
 
-  .openbath{
-    /* background-image: url("../img/bath/openbath.jpg"); */
-  }
-  .bigbath{
-    /* background-image: url("../img/bath/big_bathroom.jpg"); */
-  }
-  .hinokibath{
-    /* background-image: url("../img/bath/hinoki_bath.jpg"); */
-  } 
-
   .is-hidden{
     transition: .6s;
     display: none;
@@ -853,10 +786,10 @@
   /* commit */
   .p-bathCommit__cover{
     text-align: center;
+    padding: 0 3%;
   }
 
   .p-bathCommit__left{
-    /* width: 50%; */
     line-height: 1.7;
   }
 
@@ -869,22 +802,22 @@
     font-size: 14px;
     margin-bottom: 30px;
     text-align: left;
+    padding: 0 3%;
   }
 
   .p-bathCommit__right{
     position: relative;
     width: 100%;
     margin: 2px 0;
-    padding: 0 10px;
+  }
+
+  .p-bathCommit__right img{
+    width: 100%;
   }
 
     /* about */
-    .p-bathAbout__top{
-      /* display: flex; */
-    }
-  
+
     .p-bathAbout__bottom{
-      /* display: flex; */
       margin-top: 45px;
     }
   
@@ -902,7 +835,6 @@
     }
   
     .p-bathAbout__right{
-      /* width: 800px; */
       list-style: none;
     }
   
@@ -979,16 +911,16 @@
     background-repeat: no-repeat;
   }
 
-.cafe{
-  background-image: url("../img/guide/guide_cafe.jpg");
-}
-.lounge{
-  background-image: url("../img/guide/guide_lounge.jpg");
-}
+  .cafe{
+    background-image: url("../img/guide/guide_cafe.jpg");
+  }
+  .lounge{
+    background-image: url("../img/guide/guide_lounge.jpg");
+  }
 
-.p-guide__detail {
-  display: none;
-}
+  .p-guide__detail {
+    display: none;
+  }
 
   /* footer */
 

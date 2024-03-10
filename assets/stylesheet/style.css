@@ -77,7 +77,6 @@
   }
 
   h2{
-    /* margin: 0 auto; */
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -119,10 +118,8 @@
   .p-navTop{
     width: 100%;
     background-color: white;
-    /* display: none; */
     position: relative;
     z-index: 5;
-    /* top: -136px; */
   }
 
   .p-navTop__cover{
@@ -145,7 +142,6 @@
     font-size: 18px;
     font-weight: bold;
     letter-spacing: 0.2em;
-
     display: flex;
     align-items: center;
   }
@@ -159,8 +155,6 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    /* width: 60px; */
-    /* height: 60px; */
     width: 50px;
     height: 45px;
     margin-top: 10px;
@@ -194,7 +188,6 @@
     position: relative;
     position: fixed;
     top: -80px;
-
     height: 56px;
     background-color: black;
     text-align: right;
@@ -214,10 +207,8 @@
     right: 2%;
     top: 50%;
     transform: translateY(-50%);
-
     width: 200px;
     height: 35px;
-
     display: flex;
     align-items: center;
     color: black;
@@ -280,13 +271,11 @@
 
   .p-mainPhoto img{
     width: 100%;
-    /* height: 865px; */
     height: 90vh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     overflow: hidden;
-
     transform: scale(1.4);
     animation: animationZoom 15s ease-in-out infinite;
   }
@@ -304,10 +293,6 @@
     height: 250px;
     text-align: center;
     letter-spacing: 0.2em;
-    /* background-image: url("../img/header/main_logo.svg"); */
-    /* background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat; */
   }
 
   .p-main__logoname{
@@ -315,7 +300,6 @@
     margin-bottom: 50px;
     font-size: 17px;
     color: white;
-
     font-family: "Source Serif Pro", 游明朝, "Yu Mincho", 游明朝体, YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", HiraMinProN-W3, "Noto Serif JP", "ＭＳ 明朝", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", HG明朝E, serif;
   }
 
@@ -337,32 +321,6 @@
     15%{transform: translate(0,20px);}
     30%{transform: translate(0,0);}
     100%{transform: translate(0,0);}
-  }
-  
-  .p-main__scrolldown{
-    display: none;
-    /* position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 60px;
-    width: 70px;
-    height: 70px;
-    background-image: url("../img/header/circle_scroll.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    display: flex;
-    align-items: center; */
-
-    /* アニメーション名の指定 */
-    /* animation: updown 5s infinite; */
-    /* アニメーション動作時間の指定 */
-    /* animation-duration: 3s; */
-    /* アニメーションの動き指定（徐々に早く）*/
-    /* animation-timing-function: ease; */
-
-    /* cursor: pointer; */
   }
 
   .p-main__scrolldown > p{
@@ -455,7 +413,6 @@
 
   .p-header__information address{
     padding: 15px 20px;
-    /* border: 1px white; */
     border: rgba(255, 255, 255, 0.3) 1px solid;
     background-color: rgba(255, 255, 255, 0.1);
   }
@@ -465,12 +422,6 @@
   }
 
   .p-header__addressTell{
-    /* width: 103%;
-    height: 22px;
-    background-image: url("../img/header/header_tel.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat; */
     text-align: center;
     font-size: 25px;
     letter-spacing: 1.5px;
@@ -484,7 +435,6 @@
   }
 
   /* main */
-
   main{
     margin: 0 auto;
   }
@@ -556,24 +506,11 @@
   }
 
   .p-information__banner li{
-    /* width: 32%;
-    height: 173px;
-    margin: 0 14px;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-    font: 25px bold black; */
     position: relative;
     width: 32%;
     height: 173px;
     margin: 0 14px;
     background-color: black;
-  }
-
-  .p-information__bannerList{
-
   }
 
   .p-information__bannerList img{
@@ -583,31 +520,13 @@
     background-position: center center;
     background-repeat: no-repeat;
     opacity: 0.5;
-
     object-fit: cover;
-  }
-
-  .p-information__banner a{
-    /* background: none !important; */
-    /* margin: 0 auto; */
   }
 
   .p-information__banner li:hover{
     transition: all 0.5s ease;
     opacity: 0.7;
     cursor: pointer;
-  }
-
-  .p-information__banner :nth-child(1){
-    /* background-image: url("../img/information/inclusive.jpg"); */
-  }
-
-  .p-information__banner :nth-child(2){
-    /* background-image: url("../img/information/online_shop.jpg"); */
-  }
-
-  .p-information__banner :nth-child(3){
-    /* background-image: url("../img/information/sakebar.jpg"); */
   }
 
   .p-information__bannerTitle{
@@ -617,7 +536,6 @@
     transform: translateX(-50%);
     font-size: 19px;
     color: #fff;
-
     text-align: center;
   }
 
@@ -656,10 +574,8 @@
   }
 
   .p-philosophy__right{
-    /* position: relative; */
     width: 48%;
     margin: 2px 0;
-    /* z-index: -1; */
   }
 
   /* スライド画像 */
@@ -879,12 +795,10 @@
     top: 30%;
     left: 50%;
     transform: translateX(-50%);
-
     width: 225px;
     height: 42px;
     display: flex;
     align-items: center;
-
     font-size: 28px;
     color: #fff;
   }
@@ -898,19 +812,15 @@
     top: 30%;
     left: 50%;
     transform: translateX(-50%);
-
     width: 225px;
     height: 42px;
     display: flex;
     align-items: center;
     font-size: 14px;
-
     border: rgba(255, 255, 255, 0.3) 1px solid;
     background-color: rgba(0, 0, 0, 0.3);
-
     color: #fff;
     opacity: 0;
-
     cursor: pointer;
   }
 
@@ -928,13 +838,11 @@
     bottom: 30%;
     left: 50%;
     transform: translateX(-50%);
-
     width: 225px;
     height: 42px;
     display: flex;
     align-items: center;
     font-size: 14px;
-
     border: rgba(255, 255, 255, 0.3) 1px solid;
     background-color: rgba(255, 255, 255, 0.1);
     color: #fff;
@@ -949,18 +857,15 @@
     bottom: 30%;
     left: 50%;
     transform: translateX(-50%);
-
     width: 225px;
     height: 42px;
     display: flex;
     align-items: center;
-
     font-size: 14px;
     border: rgba(255, 255, 255, 0.3) 1px solid;
     background-color: rgba(255, 255, 255, 0.1);
     color: #fff;
     opacity: 0;
-
     cursor: pointer;
   }
 
@@ -1092,9 +997,7 @@
 
   .p-bathList__cover li{
     position: relative;
-    /* width: 32.5%; */
     width: 33%;
-    /* height: max-content; */
     height: 100%;
     margin: 0 2px;
     cursor: pointer;
@@ -1131,7 +1034,6 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-
     display: flex;
     align-items: center;
     width: 100%;
@@ -1139,7 +1041,6 @@
     font-size: 16px;
     color: black;
     background-color: white;
-
     opacity: 0;
   }
 
@@ -1166,7 +1067,6 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* object-position: 30% center; */
   }
 
   .is-hidden{

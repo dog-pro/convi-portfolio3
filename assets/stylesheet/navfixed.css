@@ -24,7 +24,6 @@ translateY(30px);にしている理由は、下記の.activeが付与された�
 .fadeinFooter{
   bottom: 0;
   position: fixed;
-  /* transition-duration: 1s; */
 }
 
 /* PC */
@@ -36,9 +35,7 @@ translateY(30px);にしている理由は、下記の.activeが付与された�
   top: 81px;
 }
 
-
 .scrollin{
   display: block;
-  /* transform: translate(0,0); */
   position: fixed;
 }
