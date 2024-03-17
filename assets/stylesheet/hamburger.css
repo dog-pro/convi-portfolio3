@@ -284,109 +284,6 @@
     background-repeat: no-repeat;
   }
 
-  .p-hamburgerPC__openhour{}
-
-  /* .p-hamburgerPC__bestrate{
-    height: 165px;
-    color: black;
-    background-color: white;
-    padding: 20px 15px;
-  } */
-
-  /* .p-hamburgerPC__bestrateTop{
-    position: relative;
-    border-bottom: 1px black solid;
-  } */
-
-  /* .p-hamburgerPC__bestrateTop::before{
-    content: '';
-    width: 29px;
-    height: 29px;
-    position: absolute;
-    left: -15px;
-    top: -20px;
-    z-index: 1;
-    border-left: #af9463 2px solid;
-    border-top: #af9463 2px solid;
-  }
-
-  .p-hamburgerPC__bestrateTop::after{
-    content: '';
-    width: 29px;
-    height: 29px;
-    position: absolute;
-    right: -15px;
-    top: -20px;
-    z-index: 1;
-    border-right: #af9463 2px solid;
-    border-top: #af9463 2px solid;
-  }
-
-  .p-hamburgerPC__bestrateCover{
-    height: 100px;
-    padding-left: 130px;
-    position: relative;
-  }
-
-  .p-hamburgerPC__bestrateCover::before{
-    display: block;
-    content: "";
-    position: absolute;
-    left: 5px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 100px;
-    height: 100px;
-    background-image: url("../img/hamburger/reserve_bestrate.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-
-  .p-hamburgerPC__bestrateCover p{
-    font-size: 13px;
-    line-height: 160%;
-  }
-
-  .p-hamburgerPC__bestrateTitle{
-    font-size: 21px !important;
-    color: #af9463;
-  }
-
-  .p-hamburgerPC__bestrateBottom{
-    position: relative;
-    font-size: 14px;
-    margin-top: 8px;
-    padding-top: 10px;
-    line-height: 160%;
-  }
-
-  .p-hamburgerPC__bestrateBottom::before{
-    content: '';
-    width: 29px;
-    height: 29px;
-    position: absolute;
-    left: -15px;
-    bottom: -21px;
-    z-index: 1;
-    border-left: #af9463 2px solid;
-    border-bottom: #af9463 2px solid;
-  }
-
-  .p-hamburgerPC__bestrateBottom::after{
-    content: '';
-    width: 29px;
-    height: 29px;
-    position: absolute;
-    right: -15px;
-    bottom: -21px;
-    z-index: 1;
-    border-right: #af9463 2px solid;
-    border-bottom: #af9463 2px solid;
-  } */
-
-  /* after click event */
-
   .add{
     position: fixed;
     right: 0;
@@ -401,8 +298,6 @@
     transition:all .6s;
   }
 }
-
-
 
 /* SP style */
 @media screen and (max-width: 768px){
@@ -454,339 +349,338 @@
     display: none;
   }
 
-.active{
-  display: block;
-}
+  .active{
+    display: block;
+  }
 
-/* p-humburgerSP */
-.p-humburgerSP{
-  display: none;
-  position: fixed;
-  top: 50px;
+  /* p-humburgerSP */
+  .p-humburgerSP{
+    display: none;
+    position: fixed;
+    top: 50px;
 
-  width: 100%;
-  height: 93%;
-  z-index: 4;
-  padding-top: 20px;
-  margin: 0 auto;
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.95);
-  overflow-y: scroll;
-  overflow-x: hidden;
-  font-family: "Source Serif Pro", "游明朝", "Yu Mincho", "游明朝体", "YuMincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HiraMinProN-W3", "Noto Serif JP", "ＭＳ 明朝", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", "HG明朝E", serif;
-}
+    width: 100%;
+    height: 93%;
+    z-index: 4;
+    padding-top: 20px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.95);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    font-family: "Source Serif Pro", "游明朝", "Yu Mincho", "游明朝体", "YuMincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HiraMinProN-W3", "Noto Serif JP", "ＭＳ 明朝", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", "HG明朝E", serif;
+  }
 
-.p-humburgerSP__language{
-  width: 97%;
-  display: flex;
-  margin: 0 auto;
-  flex-wrap: wrap;
-  list-style: none;
-}
+  .p-humburgerSP__language{
+    width: 97%;
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    list-style: none;
+  }
 
-.p-humburgerSP__language li{
-  width: 30.7%;
-  height: 30px;
-  display: flex;
-  align-items: center;
-  margin: 0 1% 10px;
-  border: #c3c3c3 1px solid;
-  cursor:pointer;
-}
+  .p-humburgerSP__language li{
+    width: 30.7%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    margin: 0 1% 10px;
+    border: #c3c3c3 1px solid;
+    cursor:pointer;
+  }
 
-.p-humburgerSP__language a{
-  margin: 0 auto;
-}
+  .p-humburgerSP__language a{
+    margin: 0 auto;
+  }
 
-.p-humburgerSP__nav{
-  width: 93%;
-  margin: 15px auto;
-  text-align: center;
-  list-style: none;
-  line-height: 2;
-}
+  .p-humburgerSP__nav{
+    width: 93%;
+    margin: 15px auto;
+    text-align: center;
+    list-style: none;
+    line-height: 2;
+  }
 
-.p-humburgerSP__nav li{
-  position: relative;
-  border-bottom: #c3c3c3 1px solid;
-  padding: 10px 0;
-  cursor: pointer;
-}
+  .p-humburgerSP__nav li{
+    position: relative;
+    border-bottom: #c3c3c3 1px solid;
+    padding: 10px 0;
+    cursor: pointer;
+  }
 
-.p-humburgerSP__nav li:last-child{
-  border: none;
-}
+  .p-humburgerSP__nav li:last-child{
+    border: none;
+  }
 
-.p-humburgerSP__search{
-  width: 93%;
-  list-style: none;
-  margin: 15px auto;
-}
+  .p-humburgerSP__search{
+    width: 93%;
+    list-style: none;
+    margin: 15px auto;
+  }
 
-.p-humburgerSP__search li{
-  margin-bottom: 15px;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  border: double;
-  cursor: pointer;
-}
+  .p-humburgerSP__search li{
+    margin-bottom: 15px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border: double;
+    cursor: pointer;
+  }
 
-.p-humburgerSP__search a{
-  margin: 0 auto;
-}
+  .p-humburgerSP__search a{
+    margin: 0 auto;
+  }
 
-.p-humburgerSP__search a::after{
-  content: "";
-  position: absolute;
-  background-image: url("");
-  background-size: 30px 15px;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: none;
-}
+  .p-humburgerSP__search a::after{
+    content: "";
+    position: absolute;
+    background-image: url("");
+    background-size: 30px 15px;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: none;
+  }
 
-.p-humburgerSP__cancel{
-  width: 93%;
-  position: relative;
-  font-size: 12px;
-  text-align: left;
-  padding-left: 6%;
-  margin: 0 auto;
-  cursor: pointer;
-}
+  .p-humburgerSP__cancel{
+    width: 93%;
+    position: relative;
+    font-size: 12px;
+    text-align: left;
+    padding-left: 6%;
+    margin: 0 auto;
+    cursor: pointer;
+  }
 
-.p-humburgerSP__cancel > p{
-  width: 150px;
-  border-bottom: #c3c3c3 1px solid;
-}
+  .p-humburgerSP__cancel > p{
+    width: 150px;
+    border-bottom: #c3c3c3 1px solid;
+  }
 
-.p-humburgerSP__cancel > p::before{
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 3%;
-  width: 12px;
-  height: 12px;
-  transform: rotate(-90deg);
-  background-image: url("../img/arrow_down.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.p-humburgerSP__tel{
-  display: flex;
-  width: 93%;
-  margin: 15px auto;
-  padding: 10px 0;
-  border: double;
-}
-
-.p-humburgerSP__telLeft{
-  width: 50%;
-  display: flex;
-  align-items: center;
-  border-right: 1px solid black;
-}
-
-.p-humburgerSP__telLeft p{
-  position: relative;
-margin: 0 auto;
-padding-left: 30px;
-text-align: left;
-font-size: 12px;
-}
-
-.p-humburgerSP__telLeft p::before{
-  content: "";
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 0;
-  width: 20px;
-  height: 20px;
-  background-image: url("../img/hamburger/icon_phone.svg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
-}
-
-.p-humburgerSP__telRight{
-  display: flex;
-  align-items: center;
-  width: 50%;
-  height: 60px;
-  cursor: pointer;
-}
-
-.p-humburgerSP__telRight p{
-  width: 105px;
-  height: 27px;
-  margin: 0 auto;
-  background-image: url("../img/hamburger/menu_tel.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.p-hamburgerSP__bestrate{
-  width: 87%;
-  height: 110px;
-  color: black;
-  background-color: white;
-  margin: 15px auto;
-  padding: 15px 10px;
-  border: #c3c3c3 1px solid;
-}
-
-.p-hamburgerSP__bestrateTop{
-  position: relative;
-  text-align: left;
-}
-
-.p-hamburgerSP__bestrateTop::before{
-  content: '';
-  width: 29px;
-  height: 29px;
-  position: absolute;
-  left: -12px;
-  top: -17px;
-  z-index: 1;
-  border-left: #af9463 2px solid;
-  border-top: #af9463 2px solid;
-}
-
-.p-hamburgerSP__bestrateTop::after{
-  content: '';
-  width: 29px;
-  height: 29px;
-  position: absolute;
-  right: -12px;
-  top: -17px;
-  z-index: 1;
-  border-right: #af9463 2px solid;
-  border-top: #af9463 2px solid;
-}
-
-.p-hamburgerSP__bestrateCover{
-  height: 60px;
-  padding-left: 90px;
-  position: relative;
-}
-
-.p-hamburgerSP__bestrateCover::before{
-  display: block;
-  content: "";
-  position: absolute;
-  left: 5px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 60px;
-  height: 60px;
-  background-image: url("../img/hamburger/reserve_bestrate.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.p-hamburgerSP__bestrateCover p{
-  font-size: 11px;
-  line-height: 160%;
-}
-
-.p-hamburgerSP__bestrateTitle{
-  font-size: 21px !important;
-  color: #af9463;
-}
-
-.p-hamburgerSP__bestrateBottom{
-  position: relative;
-  font-size: 12px;
-  margin-top: 8px;
-  padding-top: 10px;
-  line-height: 160%;
-}
-
-.p-hamburgerSP__bestrateBottom::before{
-  content: '';
-  width: 29px;
-  height: 29px;
-  position: absolute;
-  left: -12px;
-  bottom: -12px;
-  z-index: 1;
-  border-left: #af9463 2px solid;
-  border-bottom: #af9463 2px solid;
-}
-
-.p-hamburgerSP__bestrateBottom::after{
-  content: '';
-  width: 29px;
-  height: 29px;
-  position: absolute;
-  right: -12px;
-  bottom: -12px;
-  z-index: 1;
-  border-right: #af9463 2px solid;
-  border-bottom: #af9463 2px solid;
-}
-
-.p-humburgerSP__menu{
-  width: 93%;
-  display: flex;
-  flex-wrap: wrap;
-  margin: 35px auto 0;
-  list-style: none;
-}
-
-.p-humburgerSP__menu li{
-  width: 50%;
-  font-size: 12px;
-  margin-bottom: 20px;
-  cursor: pointer;
-}
-
-.p-humburgerSP__menu a{
-  border-bottom: 1px solid black;
-}
-
-
-.p-humburgerSP__sns{
-  width: 220px;
-  display: flex;
-  margin: 20px auto 0;
-  padding-bottom: 60px;
-}
-
-.p-humburgerSP__facebook{
-    margin: 0 40px;
-    width: 40px;
-    height: 40px;
-    background-image: url("../img/hamburger/facebook.svg");
+  .p-humburgerSP__cancel > p::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 3%;
+    width: 12px;
+    height: 12px;
+    transform: rotate(-90deg);
+    background-image: url("../img/arrow_down.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-  cursor: pointer;
-}
+  }
 
-.p-humburgerSP__instagram{
-  margin: 0 30px;
-  width: 40px;
-  height: 40px;
-  background-image: url("../img/hamburger/instagram.svg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  cursor: pointer;
-}
+  .p-humburgerSP__tel{
+    display: flex;
+    width: 93%;
+    margin: 15px auto;
+    padding: 10px 0;
+    border: double;
+  }
 
-.close{
-  /* ハンバーガーメニュー展開時、背景を固定 */
-  height: 100%;
-  overflow: hidden;  
-}
+  .p-humburgerSP__telLeft{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    border-right: 1px solid black;
+  }
 
+  .p-humburgerSP__telLeft p{
+    position: relative;
+  margin: 0 auto;
+  padding-left: 30px;
+  text-align: left;
+  font-size: 12px;
+  }
+
+  .p-humburgerSP__telLeft p::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/hamburger/icon_phone.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+  }
+
+  .p-humburgerSP__telRight{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 60px;
+    cursor: pointer;
+  }
+
+  .p-humburgerSP__telRight p{
+    width: 105px;
+    height: 27px;
+    margin: 0 auto;
+    background-image: url("../img/hamburger/menu_tel.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .p-hamburgerSP__bestrate{
+    width: 87%;
+    height: 110px;
+    color: black;
+    background-color: white;
+    margin: 15px auto;
+    padding: 15px 10px;
+    border: #c3c3c3 1px solid;
+  }
+
+  .p-hamburgerSP__bestrateTop{
+    position: relative;
+    text-align: left;
+  }
+
+  .p-hamburgerSP__bestrateTop::before{
+    content: '';
+    width: 29px;
+    height: 29px;
+    position: absolute;
+    left: -12px;
+    top: -17px;
+    z-index: 1;
+    border-left: #af9463 2px solid;
+    border-top: #af9463 2px solid;
+  }
+
+  .p-hamburgerSP__bestrateTop::after{
+    content: '';
+    width: 29px;
+    height: 29px;
+    position: absolute;
+    right: -12px;
+    top: -17px;
+    z-index: 1;
+    border-right: #af9463 2px solid;
+    border-top: #af9463 2px solid;
+  }
+
+  .p-hamburgerSP__bestrateCover{
+    height: 60px;
+    padding-left: 90px;
+    position: relative;
+  }
+
+  .p-hamburgerSP__bestrateCover::before{
+    display: block;
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 60px;
+    height: 60px;
+    background-image: url("../img/hamburger/reserve_bestrate.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .p-hamburgerSP__bestrateCover p{
+    font-size: 11px;
+    line-height: 160%;
+  }
+
+  .p-hamburgerSP__bestrateTitle{
+    font-size: 21px !important;
+    color: #af9463;
+  }
+
+  .p-hamburgerSP__bestrateBottom{
+    position: relative;
+    font-size: 12px;
+    margin-top: 8px;
+    padding-top: 10px;
+    line-height: 160%;
+  }
+
+  .p-hamburgerSP__bestrateBottom::before{
+    content: '';
+    width: 29px;
+    height: 29px;
+    position: absolute;
+    left: -12px;
+    bottom: -12px;
+    z-index: 1;
+    border-left: #af9463 2px solid;
+    border-bottom: #af9463 2px solid;
+  }
+
+  .p-hamburgerSP__bestrateBottom::after{
+    content: '';
+    width: 29px;
+    height: 29px;
+    position: absolute;
+    right: -12px;
+    bottom: -12px;
+    z-index: 1;
+    border-right: #af9463 2px solid;
+    border-bottom: #af9463 2px solid;
+  }
+
+  .p-humburgerSP__menu{
+    width: 93%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 35px auto 0;
+    list-style: none;
+  }
+
+  .p-humburgerSP__menu li{
+    width: 50%;
+    font-size: 12px;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+
+  .p-humburgerSP__menu a{
+    border-bottom: 1px solid black;
+  }
+
+
+  .p-humburgerSP__sns{
+    width: 220px;
+    display: flex;
+    margin: 20px auto 0;
+    padding-bottom: 60px;
+  }
+
+  .p-humburgerSP__facebook{
+      margin: 0 40px;
+      width: 40px;
+      height: 40px;
+      background-image: url("../img/hamburger/facebook.svg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    cursor: pointer;
+  }
+
+  .p-humburgerSP__instagram{
+    margin: 0 30px;
+    width: 40px;
+    height: 40px;
+    background-image: url("../img/hamburger/instagram.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+
+  .close{
+    /* ハンバーガーメニュー展開時、背景を固定 */
+    height: 100%;
+    overflow: hidden;  
+  }
 
 }
